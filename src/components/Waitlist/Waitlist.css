@@ -1,0 +1,14 @@
+.waitlist-wrapper {
+  background: linear-gradient(154deg, #035e5d 16.3%, #023a39 83.7%);
+}
+
+.join {
+  background: -webkit-linear-gradient(#fff000, #ccfd62, #fff000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.avenir-font {
+  font-family: "Avenir Next LT Pro";
+}
