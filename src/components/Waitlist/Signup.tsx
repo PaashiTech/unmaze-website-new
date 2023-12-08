@@ -27,20 +27,20 @@ const Signup = () => {
   };
 
   return (
-    <div className="flex items-center justify-center relative w-full ">
-      <form
-        name="contact"
-        method="post"
-        data-netlify="true"
-        onSubmit={handleSubmit}
-      >
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      onSubmit={handleSubmit}
+    >
+      <div className="flex items-center justify-center relative w-full lg:w-[24rem]">
         <input type="hidden" name="form-name" value="contact" />
         <input
           type="email"
           name="email"
           placeholder="Email address"
           onChange={handleOnChange}
-          className="px-[2.25rem] py-[0.875rem] w-full  rounded-full placeholder:text-[#689E9E] bg-white border-[1px] border-solid border-[#fff000]"
+          className="px-[2.25rem] py-[0.875rem] lg:py-[0.5rem] w-full  rounded-full placeholder:text-[#689E9E] bg-white border-[1px] border-solid border-[#fff000]"
         />
         <button
           type="submit"
@@ -48,12 +48,12 @@ const Signup = () => {
             backgroundImage: `linear-gradient(98deg, #fff000 5.1%, #ccfd62 92.77%)`,
             border: "1px solid #fff000",
           }}
-          className={`px-[2.25rem] py-[0.875rem] absolute  rounded-full  text-base font-semibold  right-0 text-[#035e5d]`}
+          className={`px-[2.25rem] py-[0.875rem] lg:py-[0.5rem] absolute  rounded-full  text-base font-semibold  right-0 text-[#035e5d]`}
         >
           Sign up
         </button>
-      </form>
-    </div>
+      </div>
+    </form>
   );
 };
 
