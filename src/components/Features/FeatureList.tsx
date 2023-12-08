@@ -17,7 +17,7 @@ const Feature: React.FC<FeatureProps> = ({ icon, text }) => {
 
 const FeatureList = () => {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8 text-black">
       {featuresData.map((feature) => (
         <Feature key={feature.id} icon={feature.icon} text={feature.text} />
       ))}
