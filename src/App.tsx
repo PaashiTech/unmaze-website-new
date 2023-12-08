@@ -36,7 +36,7 @@ function App() {
     const optionsTwo = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.75,
+      threshold: 0.725,
     };
 
     const observerOne = new IntersectionObserver(callbackOne, optionsOne);
