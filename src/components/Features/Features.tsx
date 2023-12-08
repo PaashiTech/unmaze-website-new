@@ -3,7 +3,7 @@ import FeatureList from "./FeatureList";
 
 const Features = () => {
   return (
-    <div className="px-5 py-16 flex flex-col gap-10 items-center font-clash-display">
+    <div className="px-5 py-16 flex flex-col gap-10 items-center font-clash-display bg-white">
       <div className="flex flex-col items-center gap-[0.625rem] text-[#035e5d]">
         <h2 className="text-lg font-medium leading-6 tracking-[0.15rem]">
           Decode the maze of

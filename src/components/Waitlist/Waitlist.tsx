@@ -5,10 +5,9 @@ import "./Waitlist.css";
 
 type WaitlistProps = {
   type: "first" | "second";
-  isScrollView?: boolean;
 };
 
-const Waitlist: React.FC<WaitlistProps> = ({ type, isScrollView }) => {
+const Waitlist: React.FC<WaitlistProps> = ({ type }) => {
   return (
     <div
       className={`waitlist-${type} flex flex-col px-5 py-8 items-center gap-4`}
@@ -22,22 +21,20 @@ const Waitlist: React.FC<WaitlistProps> = ({ type, isScrollView }) => {
         </Heading>
         <Signup />
       </div>
-      {!isScrollView && (
-        <div>
-          <Text
-            size="lg"
-            className="text-white text-center leading-6 tracking-wider avenir-font"
-          >
-            Be the first to experience
-          </Text>
-          <Text
-            size="lg"
-            className="text-white text-center leading-6 tracking-wider avenir-font"
-          >
-            the power of AI in personal finance
-          </Text>
-        </div>
-      )}
+      <div>
+        <Text
+          size="lg"
+          className="text-white text-center leading-6 tracking-wider avenir-font"
+        >
+          Be the first to experience
+        </Text>
+        <Text
+          size="lg"
+          className="text-white text-center leading-6 tracking-wider avenir-font"
+        >
+          the power of AI in personal finance
+        </Text>
+      </div>
     </div>
   );
 };
