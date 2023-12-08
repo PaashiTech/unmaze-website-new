@@ -2,9 +2,12 @@ import "./Whitepaper.css";
 
 const Whitepaper = () => {
   return (
-    <div id="resources" className="px-5 py-8 bg-white scroll-m-[76px]">
-      <div className="px-9 py-12 rounded-[1.25rem] gradient text-[#035e5d]">
-        <div className="flex flex-col gap-4">
+    <div
+      id="resources"
+      className="px-5 py-8 bg-white scroll-m-[76px] flex justify-center"
+    >
+      <div className="px-9 py-12 rounded-[1.25rem] gradient text-[#035e5d] w-[31rem]">
+        <div className="flex flex-col gap-4 lg:items-center">
           <div className="font-clash-display flex flex-col gap-[0.375rem]">
             <p className="text-sm tracking-[0.105rem]">Our Research</p>
             <div>

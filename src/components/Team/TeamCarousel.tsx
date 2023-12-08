@@ -6,8 +6,11 @@ const TeamCarousel = () => {
     <div className="w-full carousel">
       {memberData.map((memberPair, i) => {
         return (
-          <div id={`item${i + 1}`} className="carousel-item w-full">
-            <div className="py-8 flex flex-col gap-8">
+          <div
+            id={`item${i + 1}`}
+            className="carousel-item w-full justify-center"
+          >
+            <div className="py-8 flex flex-col gap-8 lg:w-[30rem]">
               {memberPair.map((member) => (
                 <MemberCard
                   key={member.id}

@@ -8,11 +8,11 @@ import SocialWellfound from "../../assets/social-icons/social-wellfound.svg";
 
 const Footer = () => {
   return (
-    <div className="p-5 pb-9 bg-[#035e5d] text-white ">
-      <div className="flex flex-col gap-4 ">
+    <div className="p-5 pb-9 bg-[#035e5d] text-white flex flex-col items-center">
+      <div className="flex flex-col gap-4 lg:w-[40rem] ">
         <img src={logo} alt="unmaze-logo" className="w-40" />
-        <div className="flex">
-          <p className="leading-5 tracking-[0.1rem] avenir-font">
+        <div className="flex justify-between ">
+          <p className="leading-5 tracking-[0.1rem] avenir-font lg:w-[20rem]">
             Unmaze is the financial co-pilot you deserve. Invest smarter, save
             more, and achieve your financial goals faster
           </p>
@@ -20,11 +20,11 @@ const Footer = () => {
             <img
               src={madeInIndia}
               alt="made-in-India"
-              className="w-full h-full"
+              className="w-full h-full  lg:mr-12"
             />
           </div>
         </div>
-        <div className="mt-10 flex gap-5">
+        <div className="mt-10 flex justify-between">
           <div className="flex flex-col gap-3">
             <p className="font-clash-display text-[#fff000] text-xl leading-6 tracking-[0.15rem] font-medium">
               About Us
