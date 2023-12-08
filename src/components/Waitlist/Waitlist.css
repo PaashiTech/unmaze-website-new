@@ -1,5 +1,9 @@
-.waitlist-wrapper {
+.waitlist-first {
   background: linear-gradient(154deg, #035e5d 16.3%, #023a39 83.7%);
+}
+
+.waitlist-second {
+  background-color: #035e5d;
 }
 
 .join {

@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         "clash-display": ["Clash Display", "sans-serif"],
+        "avenir-next": ["Avenir Next LT Pro", "sans-serif"],
       },
     },
   },
