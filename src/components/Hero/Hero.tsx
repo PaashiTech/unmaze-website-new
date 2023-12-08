@@ -1,4 +1,4 @@
-import BackgroundLogo from "../BackgroundLogo";
+// import BackgroundLogo from "../BackgroundLogo";
 import Heading from "../Typography/Heading";
 import Text from "../Typography/Text";
 import "./Hero.css";
@@ -6,7 +6,7 @@ import "./Hero.css";
 const Hero = () => {
   return (
     <div className="hero-gradient flex flex-col gap-12 py-[6.4375rem] px-[1.25rem] text-center text-[#035E5D] relative ">
-      <BackgroundLogo />
+      {/* <BackgroundLogo /> */}
       <div className="flex flex-col gap-3">
         <Heading
           as="h2"
