@@ -52,7 +52,7 @@ function App() {
 
   return (
     <div className="relative dynamic-height">
-      <div className="flex flex-col h-screen overflow-scroll">
+      <div className="flex flex-col dynamic-height overflow-scroll">
         <Navbar />
         <Hero />
         <div ref={contaierRefOne}>
