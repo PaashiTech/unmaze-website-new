@@ -1,6 +1,6 @@
 const Careers = () => {
   return (
-    <div className="px-5 py-8 bg-[#035e5d]">
+    <div id="careers" className="px-5 py-8 bg-[#035e5d] scroll-m-[76px]">
       <div className="px-9 py-12 rounded-[1.25rem] bg-white text-[#035e5d]">
         <div className="flex flex-col gap-4">
           <div className="font-clash-display flex flex-col gap-[0.375rem]">

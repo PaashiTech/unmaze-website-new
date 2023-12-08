@@ -5,7 +5,10 @@ import "./Hero.css";
 
 const Hero = () => {
   return (
-    <div className="hero-gradient flex flex-col gap-12 py-[6.4375rem] px-[1.25rem] text-center text-[#035E5D] relative ">
+    <div
+      id="home"
+      className="hero-gradient flex flex-col gap-12 py-[6.4375rem] px-[1.25rem] text-center text-[#035E5D] relative scroll-m-[76px]"
+    >
       {/* <BackgroundLogo /> */}
       <div className="flex flex-col gap-3">
         <Heading

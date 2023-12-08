@@ -2,7 +2,7 @@ import logo from "../../assets/logo_footer.svg";
 import madeInIndia from "../../assets/made-in-india.png";
 import "./Footer.css";
 import SocialLinkedin from "../../assets/social-icons/social-linkedIn.svg";
-import SocialInstagram from "../../assets/social-icons/social-instagram.svg";
+// import SocialInstagram from "../../assets/social-icons/social-instagram.svg";
 import SocialTwitter from "../../assets/social-icons/social-twitter.svg";
 import SocialWellfound from "../../assets/social-icons/social-wellfound.svg";
 
@@ -30,15 +30,24 @@ const Footer = () => {
               About Us
             </p>
             <div className="flex flex-col gap-2 font-avenir-next ">
-              <p className="text-[0.875rem] leading-[1.125] tracking-[0.035rem]">
+              <a
+                href="#home"
+                className="text-[0.875rem] leading-[1.125] tracking-[0.035rem]"
+              >
                 Home
-              </p>
-              <p className="text-[0.875rem] leading-[1.125] tracking-[0.035rem]">
+              </a>
+              <a
+                href="#resources"
+                className="text-[0.875rem] leading-[1.125] tracking-[0.035rem]"
+              >
                 Resources
-              </p>
-              <p className="text-[0.875rem] leading-[1.125] tracking-[0.035rem]">
+              </a>
+              <a
+                href="#careers"
+                className="text-[0.875rem] leading-[1.125] tracking-[0.035rem]"
+              >
                 Careers
-              </p>
+              </a>
             </div>
           </div>
           <div className="flex flex-col gap-3">
@@ -46,21 +55,24 @@ const Footer = () => {
               Contact Us
             </p>
             <div className="flex flex-col gap-3 font-avenir-next ">
-              <p className="text-[0.875rem] leading-[1.125rem] tracking-[0.035rem]">
+              <a
+                href="mailto:corporate@unmaze.app"
+                className="text-[0.875rem] leading-[1.125rem] tracking-[0.035rem]"
+              >
                 corporate@unmaze.app
-              </p>
+              </a>
               <div className="flex gap-3">
-                <a href="/">
-                  <img src={SocialLinkedin} alt="" />
+                <a href="https://www.linkedin.com/company/unmaze-app/about/">
+                  <img src={SocialLinkedin} alt="linkedin-icon" />
                 </a>
-                <a href="/">
+                {/* <a href="/">
                   <img src={SocialInstagram} alt="" />
+                </a> */}
+                <a href="https://twitter.com/UnmazeApp">
+                  <img src={SocialTwitter} alt="twitter-icon" />
                 </a>
-                <a href="/">
-                  <img src={SocialTwitter} alt="" />
-                </a>
-                <a href="/">
-                  <img src={SocialWellfound} alt="" />
+                <a href="https://wellfound.com/company/unmaze-app">
+                  <img src={SocialWellfound} alt="wellfound-icon" />
                 </a>
               </div>
             </div>
