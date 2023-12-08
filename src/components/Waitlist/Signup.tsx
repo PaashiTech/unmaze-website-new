@@ -24,7 +24,7 @@ const Signup = () => {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: "email=" + { email },
+        body: "email=" + email,
       })
         .then(() => {
           setFormSent(true);
@@ -46,6 +46,7 @@ const Signup = () => {
         data-netlify="true"
         onSubmit={handleSubmit}
       >
+        <input type="hidden" name="form-name" value="contact" />
         <input
           type="email"
           name="email"
