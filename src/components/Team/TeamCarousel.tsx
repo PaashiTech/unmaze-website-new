@@ -1,55 +1,26 @@
+import MemberCard from "./MemberCard";
+import { memberData } from "./memberData";
+
 const TeamCarousel = () => {
   return (
     <div className="w-full carousel">
-      <div className="carousel-item w-full">
-        <img
-          src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg"
-          className="w-full"
-          alt="Tailwind CSS Carousel component"
-        />
-      </div>
-      <div className="carousel-item w-full">
-        <img
-          src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg"
-          className="w-full"
-          alt="Tailwind CSS Carousel component"
-        />
-      </div>
-      <div className="carousel-item w-full">
-        <img
-          src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
-          className="w-full"
-          alt="Tailwind CSS Carousel component"
-        />
-      </div>
-      <div className="carousel-item w-full">
-        <img
-          src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg"
-          className="w-full"
-          alt="Tailwind CSS Carousel component"
-        />
-      </div>
-      <div className="carousel-item w-full">
-        <img
-          src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg"
-          className="w-full"
-          alt="Tailwind CSS Carousel component"
-        />
-      </div>
-      <div className="carousel-item w-full">
-        <img
-          src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg"
-          className="w-full"
-          alt="Tailwind CSS Carousel component"
-        />
-      </div>
-      <div className="carousel-item w-full">
-        <img
-          src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
-          className="w-full"
-          alt="Tailwind CSS Carousel component"
-        />
-      </div>
+      {memberData.map((memberPair, i) => {
+        return (
+          <div id={`item${i + 1}`} className="carousel-item w-full">
+            <div className="py-8 flex flex-col gap-8">
+              {memberPair.map((member) => (
+                <MemberCard
+                  key={member.id}
+                  bio={member.bio}
+                  image={member.image}
+                  name={member.name}
+                  reverse={member.reverse}
+                />
+              ))}
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 };

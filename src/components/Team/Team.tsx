@@ -1,5 +1,5 @@
 import "./Team.css";
-// import TeamCarousel from "./TeamCarousel";
+import TeamCarousel from "./TeamCarousel";
 
 const Team = () => {
   return (
@@ -17,7 +17,7 @@ const Team = () => {
           Behind Unmaze
         </h2>
       </div>
-      {/* <TeamCarousel /> */}
+      <TeamCarousel />
     </div>
   );
 };
