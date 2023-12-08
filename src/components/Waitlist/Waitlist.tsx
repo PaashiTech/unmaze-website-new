@@ -1,6 +1,6 @@
 import Heading from "../Typography/Heading";
 import Text from "../Typography/Text";
-// import Signup from "./Signup";
+import Signup from "./Signup";
 import "./Waitlist.css";
 
 const Waitlist = ({ type }: { type: "first" | "second" }) => {
@@ -8,14 +8,14 @@ const Waitlist = ({ type }: { type: "first" | "second" }) => {
     <div
       className={`waitlist-${type} flex flex-col px-5 py-8 items-center gap-4`}
     >
-      <div className="flex flex-col gap-6 items-center">
+      <div className="flex flex-col gap-6 items-center w-full">
         <Heading
           as="h2"
           className="text-white font-clash-display text-2xl font-semibold leading-6 tracking-[0.06rem]"
         >
           <span className="join">Join</span> the waitlist
         </Heading>
-        {/* <Signup /> */}
+        <Signup />
       </div>
       <div>
         <Text
