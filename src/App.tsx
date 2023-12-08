@@ -51,7 +51,7 @@ function App() {
   }, [contaierRefOne, contaierRefTwo]);
 
   return (
-    <div className="relative h-screen">
+    <div className="relative dynamic-height">
       <div className="flex flex-col h-screen overflow-scroll">
         <Navbar />
         <Hero />
