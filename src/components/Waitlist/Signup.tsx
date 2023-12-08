@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "./Signup.css";
 
 const Signup = () => {
   const [email, setEmail] = useState<string>("");
@@ -56,9 +55,13 @@ const Signup = () => {
         />
         <button
           type="submit"
-          className="button px-[2.25rem] py-[0.875rem] absolute  rounded-full  text-base font-semibold  right-0"
+          style={{
+            backgroundImage: `linear-gradient(98deg, #fff000 5.1%, #ccfd62 92.77%)`,
+            border: "1px solid #fff000",
+          }}
+          className={`px-[2.25rem] py-[0.875rem] absolute  rounded-full  text-base font-semibold  right-0 text-[#035e5d]`}
         >
-          Signup
+          Sign up
         </button>
       </form>
     </div>

@@ -10,7 +10,7 @@ type WaitlistProps = {
 const Waitlist: React.FC<WaitlistProps> = ({ type }) => {
   return (
     <div
-      className={`waitlist-${type} flex flex-col px-5 py-8 items-center gap-4`}
+      className={`waitlist-${type} flex flex-col px-5 py-8 items-center gap-4 `}
     >
       <div className="flex flex-col gap-6 items-center w-full">
         <Heading
