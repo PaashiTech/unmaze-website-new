@@ -30,7 +30,7 @@ function App() {
     const optionsOne = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.2,
+      threshold: 0.35,
     };
 
     const optionsTwo = {
@@ -65,7 +65,6 @@ function App() {
         <div ref={contaierRefTwo}>
           <Waitlist type="second" />
         </div>
-
         <Footer />
       </div>
       {!isVisibleOne && !isVisibleTwo && <WaitlistSticky type="second" />}

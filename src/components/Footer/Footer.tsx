@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="flex flex-col gap-4 ">
         <img src={logo} alt="unmaze-logo" className="w-40" />
         <div className="flex">
-          <p className=" leading-5 tracking-[0.1rem] avenir-font">
+          <p className="leading-5 tracking-[0.1rem] avenir-font">
             Unmaze is the financial co-pilot you deserve. Invest smarter, save
             more, and achieve your financial goals faster
           </p>
