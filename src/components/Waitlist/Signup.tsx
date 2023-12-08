@@ -1,34 +1,22 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Signup = () => {
   const [email, setEmail] = useState<string>("");
-  const [formSent, setFormSent] = useState<boolean>(false);
-
-  useEffect(() => {
-    if (formSent) {
-      const timeout = setTimeout(() => {
-        window.location.replace("https://bit.ly/unmz");
-      }, 2000);
-
-      return () => clearTimeout(timeout);
-    }
-  }, [formSent]);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const target = e.target as typeof e.target & {
-      email: { value: string };
-    };
 
-    if (target.email.value) {
+    if (email) {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: "email=" + email,
+        body: "email=" + email + "test",
       })
         .then(() => {
-          setFormSent(true);
           alert("Thank you for your interest in Unmaze!");
+          setTimeout(() => {
+            window.location.replace("https://bit.ly/unmz");
+          }, 2000);
         })
         .catch((error) => alert(error));
     }
@@ -42,7 +30,7 @@ const Signup = () => {
     <div className="flex items-center justify-center relative w-full ">
       <form
         name="contact"
-        method="POST"
+        method="post"
         data-netlify="true"
         onSubmit={handleSubmit}
       >
