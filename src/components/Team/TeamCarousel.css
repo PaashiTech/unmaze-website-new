@@ -10,6 +10,11 @@
   transition: transform 0.2s smooth;
 }
 
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+}
+
 .slick-slide > div > div {
   display: flex;
 }
