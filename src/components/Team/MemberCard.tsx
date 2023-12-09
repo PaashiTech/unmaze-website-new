@@ -1,5 +1,5 @@
 import React from "react";
-import starSmall from "../../assets/star-small.svg";
+import starYellowMobile from "../../assets/stars/star-yellow-mobile.png";
 
 type MemberCardProps = {
   image: string;
@@ -15,15 +15,19 @@ const MemberCard: React.FC<MemberCardProps> = ({
   reverse,
 }) => {
   return (
-    <div className="px-5 flex gap-4 items-center">
-      <div className={`${reverse ? "order-1" : "order-none"} shrink-0`}>
+    <div className="flex items-center gap-4 px-5">
+      <div
+        className={`${
+          reverse ? "order-1" : "order-none"
+        } lg: order-none shrink-0`}
+      >
         <img src={image} alt={name} />
       </div>
 
       <div className="flex flex-col gap-3 text-center">
         <p className="font-clash-display text-xl font-bold leading-6 tracking-wider text-[#fff000]">
-          <span className="inline-block mr-2">
-            <img src={starSmall} alt="star" />
+          <span className="mr-2 inline-block">
+            <img src={starYellowMobile} alt="star" />
           </span>
           {name}
         </p>
