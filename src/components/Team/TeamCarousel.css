@@ -1,0 +1,48 @@
+.slick-dots li.slick-active div {
+  height: 0.375rem;
+  background-color: #fff000;
+  width: 2.5rem;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  border-bottom-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+  transform: translateX(-0%);
+  transition: transform 0.2s smooth;
+}
+
+.slick-slide > div > div {
+  display: flex;
+}
+
+.slick-dots li div {
+  height: 0.375rem;
+  width: 0.5rem;
+  background-color: #d9d9d9;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  border-bottom-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+  transform: translateX(-0%);
+  transition: width 0.2s ease-in;
+}
+
+.slick-dots ul {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.slick-dots li {
+  width: auto;
+  margin: 0;
+}
+
+.slick-dots {
+  transform: translateY(4rem);
+}
+
+@media screen and (max-width: 768px) {
+  .slick-dots {
+    transform: translateY(0);
+  }
+}

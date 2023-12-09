@@ -1,9 +1,9 @@
-import Palnika from "../../assets/team/palnika.png";
-import Suman from "../../assets/team/suman.png";
-import Amogh from "../../assets/team/amogh.png";
-import Harsh from "../../assets/team/harsh.png";
-import Ketan from "../../assets/team/ketan.png";
-import Vartika from "../../assets/team/vartika.png";
+import Palnika from "../../assets/team/palnika.jpg";
+import Suman from "../../assets/team/suman.jpg";
+import Amogh from "../../assets/team/amogh.jpeg";
+import Harsh from "../../assets/team/harsh.jpg";
+import Ketan from "../../assets/team/ketan.jpeg";
+import Vartika from "../../assets/team/vartika.jpeg";
 
 export const memberData = [
   [
