@@ -15,8 +15,8 @@ function App() {
     useElementVisible();
 
   return (
-    <div className="relative dynamic-height">
-      <div className="flex flex-col h-full overflow-scroll scroll-smooth">
+    <div className="relative h-[100dvh]">
+      <div className="flex h-full flex-col overflow-scroll scroll-smooth">
         <Navbar />
         <Hero />
         <div ref={contaierRefOne}>
@@ -26,7 +26,7 @@ function App() {
         <Whitepaper />
         <Team />
         <Careers />
-        <div ref={contaierRefTwo}>
+        <div ref={contaierRefTwo} className="lg:hidden">
           <Waitlist type="second" />
         </div>
         <Footer />

@@ -1,5 +1,4 @@
 import Heading from "../Typography/Heading";
-import Text from "../Typography/Text";
 import Signup from "./Signup";
 import "./Waitlist.css";
 
@@ -10,30 +9,24 @@ type WaitlistProps = {
 const Waitlist: React.FC<WaitlistProps> = ({ type }) => {
   return (
     <div
-      className={`waitlist-${type} flex flex-col px-5 py-8 items-center gap-4 `}
+      id="waitlist"
+      className={`waitlist-${type} flex flex-col items-center gap-4 px-5 py-8 lg:scroll-m-[95.2px] lg:gap-6 lg:px-[5.625rem] lg:py-[4rem]`}
     >
-      <div className="flex flex-col gap-6 items-center w-full">
+      <div className="flex w-full flex-col items-center gap-6 lg:gap-10">
         <Heading
           as="h2"
-          className="text-white font-clash-display text-2xl font-semibold leading-6 tracking-[0.06rem]"
+          className="font-clash-display text-2xl font-semibold leading-6 tracking-[0.06rem] text-white lg:text-5xl"
         >
           <span className="join">Join</span> the waitlist
         </Heading>
         <Signup />
       </div>
       <div>
-        <Text
-          size="lg"
-          className="text-white text-center leading-6 tracking-wider avenir-font"
-        >
+        <p className="text-center font-avenir-next text-lg leading-6 tracking-wider text-white lg:text-[1.75rem] lg:leading-10">
           Be the first to experience
-        </Text>
-        <Text
-          size="lg"
-          className="text-white text-center leading-6 tracking-wider avenir-font"
-        >
-          the power of AI in personal finance
-        </Text>
+          <br />
+          the power of AI in personal finance.
+        </p>
       </div>
     </div>
   );

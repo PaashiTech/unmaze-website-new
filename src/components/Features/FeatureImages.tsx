@@ -10,13 +10,13 @@ const ImageContainer = ({ src }: { src: string }) => {
 
 const FeatureImages = () => {
   return (
-    <div className="w-full max-w-lg flex rounded-[1.25rem] overflow-hidden relative">
-      <div className="flex flex-col w-[56.25%] z-10">
+    <div className="relative flex w-full max-w-lg overflow-hidden rounded-[1.25rem]">
+      <div className="z-10 flex w-[56.25%] flex-col">
         <ImageContainer src={image_1} />
         <ImageContainer src={image_2} />
       </div>
       <div></div>
-      <div className="absolute translate-x-[25%] h-full ">
+      <div className="absolute h-full translate-x-[25%] ">
         <ImageContainer src={image_3} />
       </div>
     </div>

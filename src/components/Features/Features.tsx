@@ -1,19 +1,24 @@
 import FeatureImages from "./FeatureImages";
 import FeatureList from "./FeatureList";
+import FeaturesHeading from "./FeaturesHeading";
 
 const Features = () => {
   return (
-    <div className="px-5 py-16 flex flex-col gap-10 items-center font-clash-display bg-white">
-      <div className="flex flex-col items-center gap-[0.625rem] text-[#035e5d]">
-        <h2 className="text-lg font-medium leading-6 tracking-[0.15rem]">
-          Decode the maze of
-        </h2>
-        <h2 className="text-5xl font-semibold tracking-[0.12rem] text-center">
-          Personal Finance
-        </h2>
+    <div className="flex justify-center bg-white font-clash-display">
+      <div className="flex flex-col items-center gap-10 px-5 py-16 lg:hidden">
+        <FeaturesHeading />
+        <FeatureImages />
+        <FeatureList />
       </div>
-      <FeatureImages />
-      <FeatureList />
+      <div className="hidden lg:flex lg:w-full lg:justify-between lg:gap-10 lg:px-[5.625rem] lg:py-32">
+        <div className="flex flex-col gap-16">
+          <FeaturesHeading />
+          <FeatureList />
+        </div>
+        <div className="self-end">
+          <FeatureImages />
+        </div>
+      </div>
     </div>
   );
 };
