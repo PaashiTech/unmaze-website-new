@@ -1,16 +1,20 @@
 import { useState } from "react";
 
+const encode = (data: { [key: string]: string }) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 const Signup = () => {
   const [email, setEmail] = useState<string>("");
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
     if (email) {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: "email=" + email + "test",
+        body: encode({ "form-name": "contact", email: email }),
       })
         .then(() => {
           alert("Thank you for your interest in Unmaze!");
@@ -20,6 +24,8 @@ const Signup = () => {
         })
         .catch((error) => alert(error));
     }
+
+    e.preventDefault();
   };
 
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -29,18 +35,19 @@ const Signup = () => {
   return (
     <form
       name="contact"
-      method="POST"
+      method="post"
       data-netlify="true"
       onSubmit={handleSubmit}
     >
-      <div className="flex items-center justify-center relative w-full lg:w-[28.25rem]  font-avenir-next">
+      <div className="relative flex w-full items-center justify-center font-avenir-next  lg:w-[28.25rem]">
         <input type="hidden" name="form-name" value="contact" />
         <input
           type="email"
           name="email"
+          required
           placeholder="Email address"
           onChange={handleOnChange}
-          className="px-[2.25rem] py-[0.875rem] pr-[9rem] lg:pr-[12rem] lg:py-[1rem] lg:px-11 lg:text-2xl w-full  rounded-full placeholder:text-[#689E9E] bg-white border-[1px] border-solid border-[#fff000]"
+          className="w-full rounded-full border-[1px] border-solid border-[#fff000] bg-white px-[2.25rem] py-[0.875rem]  pr-[9rem] placeholder:text-[#689E9E] lg:px-11 lg:py-[1rem] lg:pr-[12rem] lg:text-2xl"
         />
         <button
           type="submit"
@@ -48,7 +55,7 @@ const Signup = () => {
             backgroundImage: `linear-gradient(98deg, #fff000 5.1%, #ccfd62 92.77%)`,
             border: "1px solid #fff000",
           }}
-          className={`px-[2.25rem] py-[0.875rem] lg:py-[1rem] lg:px-12 absolute rounded-full lg:text-2xl font-semibold right-0 text-primary-green`}
+          className={`absolute right-0 rounded-full px-[2.25rem] py-[0.875rem] font-semibold text-primary-green lg:px-12 lg:py-[1rem] lg:text-2xl`}
         >
           Sign up
         </button>
