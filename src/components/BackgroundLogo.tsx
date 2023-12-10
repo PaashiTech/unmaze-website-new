@@ -1,7 +1,7 @@
 import backgroundLogo from "../assets/background-logo.svg";
 const BackgroundLogo = () => {
   return (
-    <div className="absolute w-[42rem] h-[42rem] top-[-3.5rem] left-[-1.5rem]">
+    <div className="r absolute right-[-12rem] top-[3rem] w-[31rem] rotate-[80deg] lg:right-[-3rem] lg:top-[-3rem] lg:w-[37.5rem] lg:rotate-0">
       <img
         src={backgroundLogo}
         alt="background-logo"

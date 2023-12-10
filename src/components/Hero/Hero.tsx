@@ -1,4 +1,4 @@
-// import BackgroundLogo from "../BackgroundLogo";
+import BackgroundLogo from "../BackgroundLogo";
 import Heading from "../Typography/Heading";
 import "./Hero.css";
 
@@ -6,9 +6,9 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="hero-gradient relative flex scroll-m-[76px] flex-col gap-12 px-[1.25rem] py-[6.45rem] text-center text-[#035E5D] lg:scroll-m-[95.2px] lg:px-[5.625] lg:py-[15rem] lg:pt-[9.5rem]"
+      className="hero-gradient relative flex scroll-m-[76px] flex-col gap-12 overflow-x-clip px-[1.25rem] py-[6.45rem] text-center text-[#035E5D] lg:scroll-m-[95.2px] lg:bg-hero-pattern lg:px-[5.625] lg:py-[15rem] lg:pt-[9.5rem]"
     >
-      {/* <BackgroundLogo /> */}
+      <BackgroundLogo />
       <div className="flex flex-col items-center gap-3 lg:gap-4 ">
         <Heading
           as="h2"
