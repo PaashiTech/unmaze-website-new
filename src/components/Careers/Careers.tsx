@@ -40,7 +40,11 @@ const Careers = () => {
             <p className="font-avenir-next text-lg leading-6 tracking-[0.045rem] lg:pr-[8rem] lg:text-[1.75rem] lg:leading-10 lg:tracking-[0.07rem]">
               Be part of the change in the way we think about personal finance!
             </p>
-            <button className="flex shrink-0 items-center">
+            <a
+              href="https://www.linkedin.com/company/unmaze-app/jobs/"
+              target="_blank"
+              className="flex shrink-0 items-center"
+            >
               <img
                 src={nextButtonMobile}
                 alt="arrow-icon"
@@ -51,7 +55,7 @@ const Careers = () => {
                 alt="arrow-icon"
                 className="mt-4 hidden self-start lg:block"
               />
-            </button>
+            </a>
           </div>
         </div>
       </div>
