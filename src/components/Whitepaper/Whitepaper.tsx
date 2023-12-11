@@ -55,14 +55,18 @@ const Whitepaper = () => {
               <br />
               that combines both.
             </p>
-            <button className="flex">
+            <a
+              href="/Unmaze__Article__Portfolio_Optimization.pdf"
+              target="_blank"
+              className="flex"
+            >
               <img src={arrow} alt="arrow-icon" className="lg:hidden" />
               <img
                 src={arrowWhitePaper}
                 alt="arrow-icon"
                 className="mt-4 hidden self-start lg:block"
               />
-            </button>
+            </a>
           </div>
         </div>
       </div>

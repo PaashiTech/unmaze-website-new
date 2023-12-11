@@ -1,7 +1,7 @@
 import icon_1 from "../../assets/images/feature-icon-1.svg";
 import icon_2 from "../../assets/images/feature-icon-2.svg";
 import icon_3 from "../../assets/images/feature-icon-3.svg";
-// import icon_4 from "../../assets/images/feature-icon-4.svg";
+import icon_4 from "../../assets/images/feature-icon-4.svg";
 
 export const featuresData = [
   {
@@ -21,7 +21,7 @@ export const featuresData = [
   },
   {
     id: 4,
-    icon: icon_3,
+    icon: icon_4,
     text: "100% transparency, zero% stress",
   },
 ];
