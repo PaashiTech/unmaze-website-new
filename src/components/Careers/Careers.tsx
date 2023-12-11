@@ -8,9 +8,9 @@ const Careers = () => {
   return (
     <div
       id="careers"
-      className="flex h-fit scroll-m-[76px] justify-center bg-primary-green px-5 py-8 lg:scroll-m-[95.2px] lg:p-0"
+      className="flex h-fit justify-center bg-primary-green px-5 py-8 lg:p-0"
     >
-      <div className="lg:bg-gradient-unmaze-1 flex items-center rounded-[1.25rem] bg-white px-9 py-12 text-primary-green lg:rounded-none lg:bg-transparent lg:px-[5.625rem] lg:py-16">
+      <div className="flex items-center rounded-[1.25rem] bg-white px-9 py-12 text-primary-green lg:rounded-none lg:bg-transparent lg:bg-gradient-unmaze-1 lg:px-[5.625rem] lg:py-16">
         <div className="flex flex-col gap-4 lg:gap-6">
           <div className="flex flex-col gap-[0.375rem] font-clash-display lg:gap-3 lg:px-4">
             <p className="text-sm font-medium tracking-[0.105rem] lg:text-2xl">
