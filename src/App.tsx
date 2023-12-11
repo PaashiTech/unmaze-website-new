@@ -14,13 +14,13 @@ function App() {
   const { contaierRefOne, contaierRefTwo, isVisibleOne, isVisibleTwo } =
     useElementVisible();
 
+  const isWaitListVisible = !isVisibleOne && !isVisibleTwo;
+
   return (
-    <div className="relative flex min-h-[100dvh] flex-col">
+    <div className="relative flex h-[100dvh] flex-col">
       <Navbar />
       <div
-        className={`h-[calc(100dvh - 4.75rem - ${
-          !isVisibleOne && !isVisibleTwo ? "165.6px" : "0px"
-        })] flex flex-col overflow-scroll overflow-x-hidden scroll-smooth`}
+        className={`h-[calc(100dvh - 4.75rem)] flex flex-col overflow-x-hidden overflow-y-scroll scroll-smooth`}
       >
         <Hero />
         <div ref={contaierRefOne}>
@@ -34,8 +34,10 @@ function App() {
           <Waitlist type="second" />
         </div>
         <Footer />
+        {isWaitListVisible && (
+          <WaitlistSticky type="second" isWaitListVisible />
+        )}
       </div>
-      {!isVisibleOne && !isVisibleTwo && <WaitlistSticky type="second" />}
     </div>
   );
 }

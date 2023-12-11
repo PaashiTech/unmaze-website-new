@@ -4,7 +4,8 @@ import "./Waitlist.css";
 
 type WaitlistStickyProps = {
   type: "first" | "second";
-  isScrollView?: boolean;
+
+  isWaitListVisible?: boolean;
 };
 
 const WaitlistSticky: React.FC<WaitlistStickyProps> = ({ type }) => {

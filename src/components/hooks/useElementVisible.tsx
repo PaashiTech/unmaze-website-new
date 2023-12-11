@@ -18,7 +18,7 @@ const useElementVisible = () => {
         root: null,
         rootMargin: "0px",
         threshold: 0.35,
-      }
+      },
     );
     const observerTwo = new IntersectionObserver(
       (entries) => {
@@ -29,7 +29,7 @@ const useElementVisible = () => {
         root: null,
         rootMargin: "0px",
         threshold: 0.725,
-      }
+      },
     );
     if (containerOne) observerOne.observe(containerOne);
     if (containerTwo) observerTwo.observe(containerTwo);
