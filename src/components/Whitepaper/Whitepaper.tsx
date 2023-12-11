@@ -1,6 +1,6 @@
 import "./Whitepaper.css";
-import arrow from "../../assets/arrow.svg";
-import arrowWhitePaper from "../../assets/arrow-whitepaper.svg";
+import arrowMobile from "../../assets/whitepaper-arrows/whitepaper-arrow-mobile.svg";
+import arrowDesktop from "../../assets/whitepaper-arrows/whitepaper-arrow-desktop.svg";
 import starTealDesktop from "../../assets/stars/star-teal-desktop.png";
 import starTealMobile from "../../assets/stars/star-teal-mobile.png";
 
@@ -60,9 +60,9 @@ const Whitepaper = () => {
               target="_blank"
               className="flex"
             >
-              <img src={arrow} alt="arrow-icon" className="lg:hidden" />
+              <img src={arrowMobile} alt="arrow-icon" className="lg:hidden" />
               <img
-                src={arrowWhitePaper}
+                src={arrowDesktop}
                 alt="arrow-icon"
                 className="mt-4 hidden self-start lg:block"
               />

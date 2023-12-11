@@ -1,4 +1,4 @@
-import logo from "../../assets/logo_footer.svg";
+import logo from "../../assets/unmaze-logo-light.svg";
 import "./Footer.css";
 import linkedinMobile from "../../assets/social-icons/linkedIn-mobile.png";
 import linkedinDesktop from "../../assets/social-icons/linkedIn-desktop.png";
@@ -14,7 +14,7 @@ import flagMobile from "../../assets/flag/flag-mobile.svg";
 
 const Footer = () => {
   return (
-    <div className="text-content-white flex flex-col items-center bg-primary-green p-5 pb-9 lg:px-[5.625rem] lg:py-16">
+    <div className="flex flex-col items-center bg-primary-green p-5 pb-9 text-content-white lg:px-[5.625rem] lg:py-16">
       <div className="flex w-full flex-col gap-10 lg:flex-row lg:gap-6">
         <div className="flex w-full flex-col gap-4 lg:mr-12">
           <img src={logo} alt="unmaze-logo" className="w-40 lg:w-[15rem]" />
