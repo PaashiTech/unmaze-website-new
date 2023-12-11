@@ -12,7 +12,7 @@ const Whitepaper = () => {
     >
       <div className="gradient rounded-[1.25rem] px-9 py-12 text-primary-green lg:bg-gradient-to-r  lg:from-[#e1f0f0] lg:to-[#e1f0f0] lg:px-[5.625rem] lg:py-16 ">
         <div className="flex flex-col gap-4 ">
-          <div className="flex flex-col gap-[0.375rem] font-clash-display lg:gap-3">
+          <div className="font-font-heading flex flex-col gap-[0.375rem] lg:gap-3">
             <p className="text-sm font-medium tracking-[0.105rem] lg:text-2xl">
               Our Research
             </p>
@@ -39,14 +39,14 @@ const Whitepaper = () => {
             </div>
           </div>
           <div className="flex gap-8">
-            <p className="font-avenir-next text-lg leading-6 tracking-[0.045rem] lg:hidden">
+            <p className="font-font-body text-lg leading-6 tracking-[0.045rem] lg:hidden">
               Bridging the
               <br />
               gap between
               <br />
               theory and practice
             </p>
-            <p className="hidden font-avenir-next text-lg leading-6 tracking-[0.045rem] lg:block lg:text-[1.75rem] lg:leading-10">
+            <p className="font-font-body hidden text-lg leading-6 tracking-[0.045rem] lg:block lg:text-[1.75rem] lg:leading-10">
               In this paper, Unmaze.app gives you actionable
               <br />
               insights on two most widely used decision frameworks

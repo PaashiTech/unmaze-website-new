@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "clash-display": ["Clash Display", "sans-serif"],
-        "avenir-next": ["Avenir Next LT Pro", "sans-serif"],
+        "font-heading": ["Clash Display", "sans-serif"],
+        "font-body": ["Satoshi", "sans-serif"],
       },
       colors: {
         "primary-green": "#035e5d",

@@ -16,7 +16,7 @@ const WaitlistSticky: React.FC<WaitlistStickyProps> = ({ type }) => {
       <div className="flex w-full flex-col items-center gap-6 lg:gap-3">
         <Heading
           as="h2"
-          className="font-clash-display text-2xl font-semibold leading-6 tracking-[0.06rem] text-white"
+          className="font-font-heading text-2xl font-semibold leading-6 tracking-[0.06rem] text-white"
         >
           <span className="join">Join</span> the waitlist
         </Heading>

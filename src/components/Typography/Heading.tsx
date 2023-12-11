@@ -10,7 +10,7 @@ const Heading: React.FC<HeadingProps> = ({
   className,
 }) => {
   return (
-    <Component className={`font-clash-display ${className}`}>
+    <Component className={`font-font-heading ${className}`}>
       {children}
     </Component>
   );

@@ -34,7 +34,7 @@ const MemberCard: React.FC<MemberCardProps> = ({
       </div>
 
       <div className="flex flex-col gap-3 text-center">
-        <p className="font-clash-display text-xl font-bold leading-6 tracking-wider text-[#fff000] lg:text-[2rem] lg:leading-10">
+        <p className="font-font-heading text-xl font-bold leading-6 tracking-wider text-[#fff000] lg:text-[2rem] lg:leading-10">
           <span className="mr-2 inline-block">
             <img
               src={
@@ -45,7 +45,7 @@ const MemberCard: React.FC<MemberCardProps> = ({
           </span>
           {name}
         </p>
-        <p className="font-avenir-next text-xs leading-4 tracking-[0.1rem] text-white lg:px-6 lg:text-base lg:leading-5 lg:tracking-[0.04rem]">
+        <p className="font-font-body text-xs leading-4 tracking-[0.1rem] text-white lg:px-6 lg:text-base lg:leading-5 lg:tracking-[0.04rem]">
           {bio}
         </p>
       </div>

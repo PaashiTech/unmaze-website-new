@@ -11,7 +11,7 @@ const Navbar = () => {
       <a href="/">
         <img src={logo} alt="unmaze-logo" />
       </a>
-      <div className="hidden items-center gap-20 font-avenir-next text-xl tracking-wider text-primary-green lg:flex">
+      <div className="font-font-body hidden items-center gap-20 text-xl tracking-wider text-primary-green lg:flex">
         <a href="#resources">Resources</a>
         <a href="#team">Team</a>
         <a href="#careers">Careers</a>

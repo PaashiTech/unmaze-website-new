@@ -23,7 +23,7 @@ const Hero = () => {
           Investment Journeys
         </Heading>
       </div>
-      <p className="font-avenir-next text-lg font-normal leading-6 tracking-[0.045rem] lg:text-[1.75rem] lg:leading-10">
+      <p className="font-font-body text-lg font-normal leading-6 tracking-[0.045rem] lg:text-[1.75rem] lg:leading-10">
         Unmaze the world of personal finance with
         <br className="hidden lg:block" />
         the 'lightsaber' of a wealth management app
