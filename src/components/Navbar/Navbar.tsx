@@ -2,12 +2,7 @@ import logo from "../../assets/unmaze-logo-dark.svg";
 
 const Navbar = () => {
   return (
-    <nav
-      style={{
-        background: "linear-gradient(96deg, #FFF000 0%, #CCFD62 83.15%)",
-      }}
-      className="sticky top-0 z-50 flex w-full items-center justify-center p-5 shadow-md lg:justify-between lg:px-[5.625rem] lg:py-[1.25rem]"
-    >
+    <nav className="bg-gradient-unmaze-2 shadow-nav-shadow sticky top-0 z-50 flex w-full items-center justify-center p-5 lg:justify-between lg:px-[5.625rem] lg:py-[1.25rem]">
       <a href="/">
         <img src={logo} alt="unmaze-logo" />
       </a>

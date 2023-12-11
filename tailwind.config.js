@@ -14,6 +14,14 @@ export default {
       backgroundImage: {
         "gradient-unmaze-1":
           "linear-gradient(104deg, #fff000 0%, #ccfd62 100%)",
+        "gradient-unmaze-2":
+          "linear-gradient(96deg, #FFF000 0%, #CCFD62 83.15%)",
+        "gradient-unmaze-3":
+          "linear-gradient(154deg, #035e5d 16.3%, #023a39 83.7%)",
+        "gradient-unmaze-4": "linear-gradient(to right, #ccfd62, #fff000)",
+      },
+      boxShadow: {
+        "nav-shadow": "0px 1px 8px 0px rgba(2, 58, 57, 0.20);",
       },
     },
   },
