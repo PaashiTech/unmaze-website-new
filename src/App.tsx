@@ -15,9 +15,13 @@ function App() {
     useElementVisible();
 
   return (
-    <div className="relative h-[100dvh]">
-      <div className="flex h-full flex-col overflow-scroll overflow-x-hidden scroll-smooth">
-        <Navbar />
+    <div className="relative flex min-h-[100dvh] flex-col">
+      <Navbar />
+      <div
+        className={`h-[calc(100dvh - 4.75rem - ${
+          !isVisibleOne && !isVisibleTwo ? "165.6px" : "0px"
+        })] flex flex-col overflow-scroll overflow-x-hidden scroll-smooth`}
+      >
         <Hero />
         <div ref={contaierRefOne}>
           <Waitlist type="first" />

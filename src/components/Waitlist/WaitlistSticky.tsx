@@ -10,12 +10,12 @@ type WaitlistStickyProps = {
 const WaitlistSticky: React.FC<WaitlistStickyProps> = ({ type }) => {
   return (
     <div
-      className={`waitlist-${type} w-full flex flex-col px-5 py-8 items-center gap-4 absolute bottom-0 z-20 lg:py-4 lg:hidden`}
+      className={`waitlist-${type} sticky bottom-0 z-20 flex w-full flex-col items-center gap-4 px-5 py-8 lg:hidden lg:py-4`}
     >
-      <div className="flex flex-col gap-6 lg:gap-3 items-center w-full">
+      <div className="flex w-full flex-col items-center gap-6 lg:gap-3">
         <Heading
           as="h2"
-          className="text-white font-clash-display text-2xl font-semibold leading-6 tracking-[0.06rem]"
+          className="font-clash-display text-2xl font-semibold leading-6 tracking-[0.06rem] text-white"
         >
           <span className="join">Join</span> the waitlist
         </Heading>
