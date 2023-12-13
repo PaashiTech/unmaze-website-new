@@ -1,12 +1,11 @@
 import BackgroundLogo from "../BackgroundLogo";
 import Heading from "../Typography/Heading";
-import "./Hero.css";
 
 const Hero = () => {
   return (
     <div
       id="home"
-      className="hero-gradient lg:bg-hero-pattern relative flex flex-col gap-12 overflow-x-clip px-[1.25rem] py-[6.45rem] text-center text-[#035E5D] lg:px-[5.625] lg:py-[15rem]"
+      className="bg-gradient-unmaze-hero relative flex flex-col gap-12 overflow-x-clip px-[1.25rem] py-[6.45rem] text-center text-primary-green lg:px-[5.625] lg:py-[15rem]"
     >
       <BackgroundLogo />
       <div className="flex flex-col items-center gap-3 lg:gap-4 ">
