@@ -9,9 +9,9 @@ export const useResponsive = () => {
     setWindowWidth(window.innerWidth);
     setWindowHeight(window.innerHeight);
 
-    if (window.innerWidth > 1300) {
+    if (window.innerWidth > 1280) {
       setScreenType("DESKTOP");
-    } else if (window.innerWidth <= 1280 && windowWidth > 768) {
+    } else if (window.innerWidth <= 1280 && windowWidth >= 768) {
       setScreenType("TABLET");
     } else {
       setScreenType("MOBILE");
