@@ -1,29 +1,6 @@
 import logo from "../../assets/unmaze-logo-dark.svg";
-
-interface NavbarLink {
-  linkText: string;
-  redirectTo: string;
-}
-
-export const NavbarLinksData: NavbarLink[] = [
-  {
-    linkText: "Resources",
-    redirectTo: "#resources",
-  },
-  {
-    linkText: "Team",
-    redirectTo: "#team",
-  },
-  {
-    linkText: "Careers",
-    redirectTo: "#careers",
-  },
-];
-
-export const NavbarButtonData: NavbarLink = {
-  linkText: "Join the waitlist",
-  redirectTo: "#waitlist",
-};
+import { NavbarLink } from "./Navbar.types";
+import { navbarButtonData, navbarLinksData } from "./navbarData";
 
 interface NavbarProps {
   links?: NavbarLink[];
@@ -31,8 +8,8 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({
-  links = NavbarLinksData,
-  button = NavbarButtonData,
+  links = navbarLinksData,
+  button = navbarButtonData,
 }) => {
   return (
     <nav className="sticky top-0 z-50 flex w-full items-center justify-center bg-gradient-unmaze-2 p-5 shadow-nav-shadow lg:justify-between lg:px-[5.625rem] lg:py-[1.25rem]">
