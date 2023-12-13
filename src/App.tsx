@@ -8,7 +8,7 @@ import Team from "./components/Team/Team";
 import Waitlist from "./components/Waitlist/Waitlist";
 import Whitepaper from "./components/Whitepaper/Whitepaper";
 import WaitlistSticky from "./components/Waitlist/WaitlistSticky";
-import useElementVisible from "./components/hooks/useElementVisible";
+import useElementVisible from "./hooks/useElementVisible";
 
 function App() {
   const { contaierRefOne, contaierRefTwo, isVisibleOne, isVisibleTwo } =

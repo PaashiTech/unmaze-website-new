@@ -1,5 +1,5 @@
-import Heading from "../UI/Typography/Heading";
-import Text from "../UI/Typography/Text";
+import Heading from "../_UI/Typography/Heading";
+import Text from "../_UI/Typography/Text";
 import Signup from "./Signup";
 
 type WaitlistProps = {

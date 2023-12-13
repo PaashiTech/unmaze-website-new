@@ -5,7 +5,7 @@ import prevArrow from "../../assets/carousel-arrows/arrow-back.svg";
 import nextArrow from "../../assets/carousel-arrows/arrow-next.svg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useResponsive } from "../hooks/useResponsive";
+import { useResponsive } from "../../hooks/useResponsive";
 import "./TeamCarousel.css";
 
 const NextArrow = ({

@@ -1,7 +1,7 @@
 import React from "react";
 import starYellowMobile from "../../assets/stars/star-yellow-mobile.png";
 import starYellowDesktop from "../../assets/stars/star-yellow-desktop.png";
-import { useResponsive } from "../hooks/useResponsive";
+import { useResponsive } from "../../hooks/useResponsive";
 import "./MembarCard.css";
 
 type MemberCardProps = {

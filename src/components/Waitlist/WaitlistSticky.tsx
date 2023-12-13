@@ -1,4 +1,4 @@
-import Heading from "../UI/Typography/Heading";
+import Heading from "../_UI/Typography/Heading";
 import Signup from "./Signup";
 
 type WaitlistStickyProps = {
