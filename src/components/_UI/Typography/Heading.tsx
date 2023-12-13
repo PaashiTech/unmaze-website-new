@@ -16,6 +16,10 @@ const Heading: React.FC<HeadingProps> = ({
   className,
   ...props
 }) => {
+  if (variant === "sub-heading-1" || variant === "sub-heading-2") {
+    Component = "h3";
+  }
+
   return (
     <Component
       {...props}
