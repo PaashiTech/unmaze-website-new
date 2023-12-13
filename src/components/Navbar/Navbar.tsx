@@ -4,7 +4,7 @@ import { navbarButtonData, navbarLinksData } from "./navbarData";
 
 interface NavbarProps {
   links?: NavbarLink[];
-  button: NavbarLink;
+  button?: NavbarLink;
 }
 
 const Navbar: React.FC<NavbarProps> = ({
@@ -22,10 +22,10 @@ const Navbar: React.FC<NavbarProps> = ({
 
         {/* Button */}
         <a
-          href={button.redirectTo}
+          href={button?.redirectTo}
           className=" rounded-full border-2 border-primary-green px-9 py-3 font-medium"
         >
-          {button.linkText}
+          {button?.linkText}
         </a>
       </div>
     </nav>
