@@ -1,0 +1,33 @@
+{
+  "configurations": [
+    {
+      "name": "Run devtools",
+      "command": "react-devtools",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+    {
+      "name": "Launch project",
+      "request": "launch",
+      "runtimeArgs": ["run", "dev"],
+      "runtimeExecutable": "npm",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    },
+    {
+      "name": "Launch Edge",
+      "request": "launch",
+      "type": "msedge",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Launch Storybook",
+      "request": "launch",
+      "runtimeArgs": ["run", "storybook"],
+      "runtimeExecutable": "npm",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    }
+  ]
+}
