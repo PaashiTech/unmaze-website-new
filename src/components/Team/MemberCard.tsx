@@ -1,7 +1,7 @@
 import React from "react";
 import starYellowMobile from "../../assets/stars/star-yellow-mobile.png";
 import starYellowDesktop from "../../assets/stars/star-yellow-desktop.png";
-import { useResponsive } from "../hooks/useResponsive";
+import { useResponsive } from "../../hooks/useResponsive";
 import "./MembarCard.css";
 
 type MemberCardProps = {
@@ -20,11 +20,11 @@ const MemberCard: React.FC<MemberCardProps> = ({
   const { screenType } = useResponsive();
 
   return (
-    <div className="flex items-center gap-4 px-5 lg:w-[18.5rem] lg:flex-col lg:gap-6">
+    <div className="flex max-w-md items-center gap-4 px-5 md:w-[18.5rem] md:flex-col md:gap-6">
       <div
         className={`h-[9.5rem] w-[9.5rem] overflow-hidden rounded-[1.875rem] ${
           reverse ? "order-1" : "order-none"
-        } shrink-0 lg:order-none lg:h-[13.125rem] lg:w-[13.125rem]`}
+        } shrink-0 md:order-none md:h-[13.125rem] md:w-[13.125rem]`}
       >
         <img
           src={image}
@@ -34,7 +34,7 @@ const MemberCard: React.FC<MemberCardProps> = ({
       </div>
 
       <div className="flex flex-col gap-3 text-center">
-        <p className="font-clash-display text-xl font-bold leading-6 tracking-wider text-[#fff000] lg:text-[2rem] lg:leading-10">
+        <p className="font-font-heading text-xl font-bold leading-6 tracking-wider text-[#fff000] md:text-[2rem] md:leading-10">
           <span className="mr-2 inline-block">
             <img
               src={
@@ -45,7 +45,7 @@ const MemberCard: React.FC<MemberCardProps> = ({
           </span>
           {name}
         </p>
-        <p className="font-avenir-next text-xs leading-4 tracking-[0.1rem] text-white lg:px-6 lg:text-base lg:leading-5 lg:tracking-[0.04rem]">
+        <p className="font-font-body text-xs leading-4 tracking-[0.1rem] text-white md:px-6 md:text-base md:leading-5 md:tracking-[0.04rem]">
           {bio}
         </p>
       </div>

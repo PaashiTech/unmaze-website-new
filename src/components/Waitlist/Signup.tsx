@@ -39,7 +39,7 @@ const Signup = () => {
       data-netlify="true"
       onSubmit={handleSubmit}
     >
-      <div className="relative flex w-full items-center justify-center font-avenir-next  lg:w-[28.25rem]">
+      <div className="font-font-body relative flex w-full items-center justify-center  lg:w-[28.25rem]">
         <input type="hidden" name="form-name" value="contact" />
         <input
           type="email"

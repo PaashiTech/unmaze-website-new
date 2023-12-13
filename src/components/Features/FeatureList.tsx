@@ -1,5 +1,6 @@
 import React from "react";
 import { featuresData } from "./featuresData";
+import Text from "../_UI/Typography/Text";
 
 type FeatureProps = {
   icon: string;
@@ -10,9 +11,9 @@ const Feature: React.FC<FeatureProps> = ({ icon, text }) => {
   return (
     <div className="flex gap-5 px-4">
       <img src={icon} alt="feature-icon" />
-      <p className="text-lg font-medium leading-7 tracking-wider lg:text-[2rem] lg:leading-10 lg:tracking-[0.08rem]">
+      <Text size="xl" className="font-font-heading font-medium">
         {text}
-      </p>
+      </Text>
     </div>
   );
 };

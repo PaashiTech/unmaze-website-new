@@ -12,7 +12,7 @@ const Careers = () => {
     >
       <div className="flex items-center rounded-[1.25rem] bg-white px-9 py-12 text-primary-green lg:rounded-none lg:bg-transparent lg:bg-gradient-unmaze-1 lg:px-[5.625rem] lg:py-16">
         <div className="flex flex-col gap-4 lg:gap-6">
-          <div className="flex flex-col gap-[0.375rem] font-clash-display lg:gap-3 lg:px-4">
+          <div className="font-font-heading flex flex-col gap-[0.375rem] lg:gap-3 lg:px-4">
             <p className="text-sm font-medium tracking-[0.105rem] lg:text-2xl">
               Work with us
             </p>
@@ -37,7 +37,7 @@ const Careers = () => {
             </div>
           </div>
           <div className="flex gap-0 lg:gap-8">
-            <p className="font-avenir-next text-lg leading-6 tracking-[0.045rem] lg:pr-[8rem] lg:text-[1.75rem] lg:leading-10 lg:tracking-[0.07rem]">
+            <p className="font-font-body text-lg leading-6 tracking-[0.045rem] lg:pr-[8rem] lg:text-[1.75rem] lg:leading-10 lg:tracking-[0.07rem]">
               Be part of the change in the way we think about personal finance!
             </p>
             <a

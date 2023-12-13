@@ -25,7 +25,7 @@ const Footer = () => {
             </p>
 
             <div className="self-start">
-              <div className="flex flex-col items-center px-3 py-[0.625rem] font-avenir-next ">
+              <div className="font-font-body flex flex-col items-center px-3 py-[0.625rem] ">
                 <p className="text-[0.875rem] leading-[0.625rem] tracking-[0.035rem] lg:text-[1.17rem] lg:leading-[0.8rem] lg:tracking-[0.05rem]">
                   MADE IN
                 </p>
@@ -47,10 +47,10 @@ const Footer = () => {
         </div>
         <div className="flex justify-between lg:w-full lg:justify-start lg:gap-20">
           <div className="flex flex-col gap-3 lg:gap-6">
-            <p className="font-clash-display text-xl font-medium leading-6 tracking-[0.15rem] text-[#fff000] lg:text-[2rem]">
+            <p className="font-font-heading text-xl font-medium leading-6 tracking-[0.15rem] text-[#fff000] lg:text-[2rem]">
               About Us
             </p>
-            <div className="flex flex-col gap-2 font-avenir-next text-[0.875rem] lg:gap-3 lg:text-lg">
+            <div className="font-font-body flex flex-col gap-2 text-[0.875rem] lg:gap-3 lg:text-lg">
               <a href="#home" className=" leading-[1.125] tracking-[0.035rem] ">
                 Home
               </a>
@@ -69,10 +69,10 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col gap-3 lg:gap-6">
-            <p className="font-clash-display text-xl font-medium leading-6 tracking-[0.15rem] text-[#fff000] lg:text-[2rem]">
+            <p className="font-font-heading text-xl font-medium leading-6 tracking-[0.15rem] text-[#fff000] lg:text-[2rem]">
               Contact Us
             </p>
-            <div className="flex flex-col gap-3 font-avenir-next lg:gap-4">
+            <div className="font-font-body flex flex-col gap-3 lg:gap-4">
               <a
                 href="mailto:corporate@unmaze.app"
                 className="text-[0.875rem] leading-[1.125rem] tracking-[0.035rem] lg:text-xl"
@@ -143,7 +143,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="my-6 w-full lg:my-12" />
-      <p className="font-avenir-next text-[0.75rem] leading-[1.rem] tracking-[0.03rem] lg:text-base lg:tracking-[0.04rem]">
+      <p className="font-font-body text-[0.75rem] leading-[1.rem] tracking-[0.03rem] lg:text-base lg:tracking-[0.04rem]">
         Copyright © 2023 Unmaze.app | All rights reserved
       </p>
     </div>
