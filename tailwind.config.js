@@ -14,6 +14,7 @@ export default {
         "primary-yellow": "#fff000",
         "light-green": "#ccfd62",
         "dark-green": "#023a39",
+        "font-dark": "#2a2a2a",
       },
       backgroundImage: {
         "gradient-unmaze-1":
