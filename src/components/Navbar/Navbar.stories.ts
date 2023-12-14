@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import Navbar from "./Navbar";
-import { NavbarButtonData, NavbarLinksData } from "./Navbar";
+import { navbarButtonData, navbarLinksData } from "./navbarData";
 
 const meta = {
   title: "Components/Navbar",
@@ -14,8 +14,8 @@ type Story = StoryObj<typeof meta>;
 
 export const Prod: Story = {
   args: {
-    button: NavbarButtonData,
-    links: NavbarLinksData,
+    button: navbarButtonData,
+    links: navbarLinksData,
   },
 };
 
