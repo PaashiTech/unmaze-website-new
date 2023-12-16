@@ -1,8 +1,9 @@
 import "./Whitepaper.css";
 import arrowMobile from "../../assets/whitepaper-arrows/whitepaper-arrow-mobile.svg";
 import arrowDesktop from "../../assets/whitepaper-arrows/whitepaper-arrow-desktop.svg";
-import starTealDesktop from "../../assets/stars/star-teal-desktop.png";
-import starTealMobile from "../../assets/stars/star-teal-mobile.png";
+import Heading from "../_UI/Typography/Heading";
+import StarIcon from "../_UI/StarIcon";
+import Text from "../_UI/Typography/Text";
 
 const Whitepaper = () => {
   return (
@@ -12,41 +13,22 @@ const Whitepaper = () => {
     >
       <div className="gradient rounded-[1.25rem] px-9 py-12 text-primary-green lg:bg-gradient-to-r  lg:from-[#e1f0f0] lg:to-[#e1f0f0] lg:px-[5.625rem] lg:py-16 ">
         <div className="flex flex-col gap-4 ">
-          <div className="font-font-heading flex flex-col gap-[0.375rem] lg:gap-3">
-            <p className="text-sm font-medium tracking-[0.105rem] lg:text-2xl">
-              Our Research
-            </p>
-            <div>
-              <div className="flex items-center gap-[0.375rem]">
-                <p className="text-2xl font-semibold leading-6 tracking-[0.06rem] lg:text-5xl">
-                  <span className="inline-block">
-                    <img
-                      src={starTealMobile}
-                      alt="star-icon-mobile"
-                      className="lg:hidden"
-                    />
-                    <img
-                      src={starTealDesktop}
-                      alt="star-icon-desktop"
-                      className="hidden lg:block"
-                    />
-                  </span>{" "}
-                  The art of
-                  <br />
-                  mindful investing
-                </p>
-              </div>
-            </div>
+          <div className="flex flex-col gap-[0.375rem] font-font-heading lg:gap-3">
+            <Heading variant="sub-heading-2">Our Research</Heading>
+            <Heading
+              variant="heading-2"
+              className="text-2xl font-semibold leading-6 tracking-[0.06rem] lg:text-5xl"
+            >
+              <StarIcon /> The art of
+              <br />
+              mindful investing
+            </Heading>
           </div>
-          <div className="flex gap-8">
-            <p className="font-font-body text-lg leading-6 tracking-[0.045rem] lg:hidden">
-              Bridging the
-              <br />
-              gap between
-              <br />
-              theory and practice
-            </p>
-            <p className="font-font-body hidden text-lg leading-6 tracking-[0.045rem] lg:block lg:text-[1.75rem] lg:leading-10">
+          <div className="flex gap-6 lg:gap-6">
+            <Text size="lg" className="lg:hidden">
+              Bridging the gap between theory and practice
+            </Text>
+            <Text size="lg" className="hidden lg:block">
               In this paper, Unmaze.app gives you actionable
               <br />
               insights on two most widely used decision frameworks
@@ -54,11 +36,11 @@ const Whitepaper = () => {
               (MVT and BPT), along with a cutting edge technique
               <br />
               that combines both.
-            </p>
+            </Text>
             <a
               href="/Unmaze__Article__Portfolio_Optimization.pdf"
               target="_blank"
-              className="flex"
+              className="flex shrink-0"
             >
               <img src={arrowMobile} alt="arrow-icon" className="lg:hidden" />
               <img

@@ -39,7 +39,7 @@ const Signup = () => {
       data-netlify="true"
       onSubmit={handleSubmit}
     >
-      <div className="font-font-body relative flex w-full items-center justify-center  lg:w-[28.25rem]">
+      <div className="relative flex w-full items-center justify-center font-font-body  lg:w-[28.25rem]">
         <input type="hidden" name="form-name" value="contact" />
         <input
           type="email"
@@ -47,15 +47,11 @@ const Signup = () => {
           required
           placeholder="Email address"
           onChange={handleOnChange}
-          className="w-full rounded-full border-[1px] border-solid border-[#fff000] bg-white px-[2.25rem] py-[0.875rem]  pr-[9rem] placeholder:text-[#689E9E] lg:px-11 lg:py-[1rem] lg:pr-[12rem] lg:text-2xl"
+          className="placeholder:text-placeholder w-full rounded-full border-[1px] border-solid border-primary-yellow bg-white px-[2.25rem]  py-[0.875rem] pr-[9rem] lg:px-11 lg:py-[1rem] lg:pr-[12rem] lg:text-2xl"
         />
         <button
           type="submit"
-          style={{
-            backgroundImage: `linear-gradient(98deg, #fff000 5.1%, #ccfd62 92.77%)`,
-            border: "1px solid #fff000",
-          }}
-          className={`absolute right-0 rounded-full px-[2.25rem] py-[0.875rem] font-semibold text-primary-green lg:px-12 lg:py-[1rem] lg:text-2xl`}
+          className="absolute right-0 rounded-full bg-gradient-unmaze-hero px-[2.25rem] py-[0.875rem] font-semibold text-primary-green lg:px-12 lg:py-[1rem] lg:text-2xl"
         >
           Sign up
         </button>

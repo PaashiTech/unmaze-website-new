@@ -15,6 +15,7 @@ export default {
         "light-green": "#ccfd62",
         "dark-green": "#023a39",
         "font-dark": "#2a2a2a",
+        placeholder: "#689E9E",
       },
       backgroundImage: {
         "gradient-unmaze-1":
@@ -26,6 +27,7 @@ export default {
         "gradient-unmaze-4": "linear-gradient(to right, #ccfd62, #fff000)",
         "gradient-unmaze-hero":
           "linear-gradient(98deg, #fff000 5.1%, #ccfd62 92.77%)",
+        "gradient-unmaze-team": "linear-gradient(to right, #FFF000 , #CCFD62)",
       },
       boxShadow: {
         "nav-shadow": "0px 1px 8px 0px rgba(2, 58, 57, 0.20);",

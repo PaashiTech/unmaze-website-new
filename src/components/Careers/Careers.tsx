@@ -1,8 +1,10 @@
 import nextButtonDesktop from "../../assets/next-button/next-desktop.png";
 import nextButtonMobile from "../../assets/next-button/next-mobile.png";
-import starTealDesktop from "../../assets/stars/star-teal-desktop.png";
-import starTealMobile from "../../assets/stars/star-teal-mobile.png";
+
 import officeImage from "../../assets/office.jpg";
+import Heading from "../_UI/Typography/Heading";
+import StarIcon from "../_UI/StarIcon";
+import Text from "../_UI/Typography/Text";
 
 const Careers = () => {
   return (
@@ -12,34 +14,19 @@ const Careers = () => {
     >
       <div className="flex items-center rounded-[1.25rem] bg-white px-9 py-12 text-primary-green lg:rounded-none lg:bg-transparent lg:bg-gradient-unmaze-1 lg:px-[5.625rem] lg:py-16">
         <div className="flex flex-col gap-4 lg:gap-6">
-          <div className="font-font-heading flex flex-col gap-[0.375rem] lg:gap-3 lg:px-4">
-            <p className="text-sm font-medium tracking-[0.105rem] lg:text-2xl">
-              Work with us
-            </p>
-            <div>
-              <div className="flex items-center gap-[0.375rem]">
-                <p className="text-2xl font-semibold leading-6 tracking-[0.06rem] lg:text-5xl">
-                  <span className="inline-block">
-                    <img
-                      src={starTealMobile}
-                      alt="star-icon-mobile"
-                      className="lg:hidden"
-                    />
-                    <img
-                      src={starTealDesktop}
-                      alt="star-icon-desktop"
-                      className="hidden lg:block"
-                    />
-                  </span>{" "}
-                  Careers
-                </p>
-              </div>
-            </div>
+          <div className="flex flex-col gap-[0.375rem] font-font-heading lg:gap-3 lg:px-4">
+            <Heading variant="sub-heading-2">Work with us</Heading>
+            <Heading
+              variant="heading-2"
+              className="text-2xl font-semibold leading-6 tracking-[0.06rem] lg:text-5xl"
+            >
+              <StarIcon /> Careers
+            </Heading>
           </div>
           <div className="flex gap-0 lg:gap-8">
-            <p className="font-font-body text-lg leading-6 tracking-[0.045rem] lg:pr-[8rem] lg:text-[1.75rem] lg:leading-10 lg:tracking-[0.07rem]">
+            <Text size="lg">
               Be part of the change in the way we think about personal finance!
-            </p>
+            </Text>
             <a
               href="https://www.linkedin.com/company/unmaze-app/jobs/"
               target="_blank"
