@@ -1,6 +1,0 @@
-.text-gradient {
-  background: -webkit-linear-gradient(#fff000, #ccfd62);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}

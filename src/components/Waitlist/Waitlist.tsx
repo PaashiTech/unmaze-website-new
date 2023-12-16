@@ -25,15 +25,9 @@ const Waitlist: React.FC<WaitlistProps> = ({ type }) => {
         <Signup />
       </div>
       <div>
-        {/* <p className="font-font-body text-center text-lg leading-6 tracking-wider text-white lg:text-[1.75rem] lg:leading-10">
-          Be the first to experience
-          <br />
-          the power of AI in personal finance.
-        </p> */}
-        <Text size="lg" className="text-center text-white">
-          Be the first to experience
-          <br />
-          the power of AI in personal finance.
+        <Text size="lg" className="whitespace-pre-line text-center text-white">
+          {`Be the first to experience 
+          the power of AI in personal finance.`}
         </Text>
       </div>
     </div>
