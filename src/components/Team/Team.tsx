@@ -14,7 +14,7 @@ const Team = () => {
           The finance & tech wizards
         </Heading>
         <Heading
-          variant="heading-2"
+          variant="heading-1"
           className="bg-gradient-unmaze-team bg-clip-text text-transparent"
         >
           Behind Unmaze
