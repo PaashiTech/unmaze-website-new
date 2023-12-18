@@ -15,7 +15,7 @@ const Team = () => {
         </Heading>
         <Heading
           variant="heading-1"
-          className="bg-gradient-unmaze-team bg-clip-text text-transparent"
+          className="bg-gradient-unmaze-team bg-clip-text text-center text-transparent"
         >
           Behind Unmaze
         </Heading>
