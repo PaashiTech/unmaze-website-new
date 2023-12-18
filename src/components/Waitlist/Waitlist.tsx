@@ -13,6 +13,7 @@ const Waitlist: React.FC<WaitlistProps> = ({ type }) => {
   return (
     <div
       id="waitlist"
+      data-testid="waitlist"
       className={`${waitlistBg} flex flex-col items-center gap-4 px-5 py-8 lg:scroll-m-[95.2px] lg:gap-6 lg:px-[5.625rem] lg:py-[4rem]`}
     >
       <div className="flex w-full flex-col items-center gap-6 lg:gap-10">
