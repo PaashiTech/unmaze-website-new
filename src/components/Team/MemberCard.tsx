@@ -34,7 +34,7 @@ const MemberCard: React.FC<MemberCardProps> = ({
       </div>
 
       <div className="flex flex-col gap-3 text-center">
-        <p className="font-font-heading text-xl font-bold leading-6 tracking-wider text-[#fff000] md:text-[2rem] md:leading-10">
+        <p className="px-4 font-font-heading text-xl font-bold leading-6 tracking-wider text-[#fff000] md:text-[2rem] md:leading-10">
           <span className="mr-2 inline-block">
             <img
               src={
