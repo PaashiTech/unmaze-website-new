@@ -1,11 +1,7 @@
-import linkedinMobile from "../../assets/social-icons/linkedIn-mobile.png";
-import linkedinDesktop from "../../assets/social-icons/linkedIn-desktop.png";
-import instagramMobile from "../../assets/social-icons/instagram-mobile.png";
-import instagramDesktop from "../../assets/social-icons/instagram-desktop.png";
-import twitterMobile from "../../assets/social-icons//twitter-mobile.png";
-import twitterDesktop from "../../assets/social-icons/twitter-desktop.png";
-import wellfoundMobile from "../../assets/social-icons/wellfound-mobile.png";
-import wellfoundDesktop from "../../assets/social-icons/wellfound-desktop.png";
+import linkedinIcon from "../../assets/social-icons/linkedin.svg";
+import instagramIcon from "../../assets/social-icons/instagram.svg";
+import twitterIcon from "../../assets/social-icons/twitter.svg";
+import wellfoundIcon from "../../assets/social-icons/wellfound.svg";
 
 type FooterLink = {
   id: number;
@@ -15,8 +11,7 @@ type FooterLink = {
 
 type SocialIconLink = {
   id: number;
-  iconMobile: string;
-  iconDesktop: string;
+  icon: string;
   title: string;
   href: string;
 };
@@ -42,29 +37,25 @@ export const footerLinks: FooterLink[] = [
 export const socialIconLinks: SocialIconLink[] = [
   {
     id: 1,
-    iconMobile: linkedinMobile,
-    iconDesktop: linkedinDesktop,
+    icon: linkedinIcon,
     title: "linkedin-icon",
     href: "https://www.linkedin.com/company/unmaze-app/about/",
   },
   {
     id: 2,
-    iconMobile: instagramMobile,
-    iconDesktop: instagramDesktop,
+    icon: instagramIcon,
     title: "instagram-icon",
     href: "https://www.linkedin.com/company/unmaze-app/about/",
   },
   {
     id: 3,
-    iconMobile: twitterMobile,
-    iconDesktop: twitterDesktop,
+    icon: twitterIcon,
     title: "twitter-icon",
     href: "https://twitter.com/UnmazeApp",
   },
   {
     id: 4,
-    iconMobile: wellfoundMobile,
-    iconDesktop: wellfoundDesktop,
+    icon: wellfoundIcon,
     title: "wellfound-icon",
     href: "https://wellfound.com/company/unmaze-app",
   },
