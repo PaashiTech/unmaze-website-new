@@ -32,16 +32,13 @@ const Careers = () => {
               target="_blank"
               className="flex shrink-0 items-center"
             >
-              <img
-                src={nextButtonMobile}
-                alt="arrow-icon"
-                className="lg:hidden"
-              />
-              <img
-                src={nextButtonDesktop}
-                alt="arrow-icon"
-                className="mt-4 hidden self-start lg:block"
-              />
+              <picture>
+                <source
+                  srcSet={nextButtonDesktop}
+                  media="(min-width: 1024px)"
+                />
+                <img src={nextButtonMobile} alt="arrow-icon" />
+              </picture>
             </a>
           </div>
         </div>

@@ -42,12 +42,14 @@ const Whitepaper = () => {
               target="_blank"
               className="flex shrink-0"
             >
-              <img src={arrowMobile} alt="arrow-icon" className="lg:hidden" />
-              <img
-                src={arrowDesktop}
-                alt="arrow-icon"
-                className="mt-4 hidden self-start lg:block"
-              />
+              <picture>
+                <source srcSet={arrowDesktop} media="(min-width: 1024px)" />
+                <img
+                  src={arrowMobile}
+                  alt="arrow-icon"
+                  className="mt-4 self-start "
+                />
+              </picture>
             </a>
           </div>
         </div>
