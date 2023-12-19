@@ -1,5 +1,5 @@
-import nextButtonDesktop from "../../assets/next-button/next-desktop.png";
-import nextButtonMobile from "../../assets/next-button/next-mobile.png";
+import nextButtonDesktop from "../../assets/next-button/next-desktop.svg";
+import nextButtonMobile from "../../assets/next-button/next-mobile.svg";
 
 import officeImage from "../../assets/office.jpg";
 import Heading from "../_UI/Typography/Heading";
