@@ -10,7 +10,7 @@ const ImageContainer = ({ src }: { src: string }) => {
 
 const FeatureImages = () => {
   return (
-    <div className="relative flex w-full max-w-lg overflow-hidden rounded-[1.25rem]">
+    <div className="relative flex w-full max-w-lg overflow-hidden rounded-[1.25rem] lg:order-2">
       <div className="z-10 flex w-[56.25%] flex-col">
         <ImageContainer src={image_1} />
         <ImageContainer src={image_2} />
