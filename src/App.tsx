@@ -23,7 +23,7 @@ function App() {
         className={`h-[calc(100dvh - 4.75rem)] flex flex-col overflow-x-hidden overflow-y-scroll scroll-smooth`}
       >
         <Hero />
-        <div ref={contaierRefOne}>
+        <div ref={contaierRefOne} data-testid="waitlist-top">
           <Waitlist type="first" />
         </div>
         <Features />

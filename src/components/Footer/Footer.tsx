@@ -45,17 +45,19 @@ const Footer = () => {
               </a>
               <div className="flex gap-3 lg:gap-6">
                 {socialIconLinks.map((link) => (
-                  <a key={link.id} href={link.href} target="_blank">
-                    <img
-                      src={link.iconMobile}
-                      alt={link.title}
-                      className="lg:hidden"
-                    />
-                    <img
-                      src={link.iconDesktop}
-                      alt={link.title}
-                      className="hidden lg:block"
-                    />
+                  <a
+                    key={link.id}
+                    href={link.href}
+                    target="_blank"
+                    data-testid="social-link"
+                  >
+                    <picture>
+                      <source
+                        srcSet={link.iconDesktop}
+                        media="(min-width: 1024px)"
+                      />
+                      <img src={link.iconMobile} alt={link.title} />
+                    </picture>
                   </a>
                 ))}
               </div>

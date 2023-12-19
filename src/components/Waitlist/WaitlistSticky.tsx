@@ -13,6 +13,7 @@ const WaitlistSticky: React.FC<WaitlistStickyProps> = ({ type }) => {
 
   return (
     <div
+      data-testid="waitlist-sticky"
       className={`${waitlistBg} sticky bottom-0 z-20 flex w-full flex-col items-center gap-4 px-5 py-8 lg:hidden lg:py-4`}
     >
       <div className="flex w-full flex-col items-center gap-6 lg:gap-3">
