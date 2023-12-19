@@ -25,7 +25,8 @@ const Careers = () => {
           </div>
           <div className="flex gap-0 lg:gap-8">
             <Text size="lg">
-              Be part of the change in the way we think about personal finance!
+              Be a part of the change in the way we think about personal
+              finance!
             </Text>
             <a
               href="https://www.linkedin.com/company/unmaze-app/jobs/"
