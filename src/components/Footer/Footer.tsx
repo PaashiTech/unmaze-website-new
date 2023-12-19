@@ -52,11 +52,7 @@ const Footer = () => {
                     data-testid="social-link"
                   >
                     <picture>
-                      <source
-                        srcSet={link.iconDesktop}
-                        media="(min-width: 1024px)"
-                      />
-                      <img src={link.iconMobile} alt={link.title} />
+                      <img src={link.icon} alt={link.title} />
                     </picture>
                   </a>
                 ))}
