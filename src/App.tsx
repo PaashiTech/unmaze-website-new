@@ -30,7 +30,10 @@ function App() {
         <Whitepaper />
         <Team />
         <Careers />
-        <div ref={contaierRefTwo} className="lg:hidden">
+        <div
+          ref={contaierRefTwo}
+          className="bg-primary-green py-[2rem] lg:hidden"
+        >
           <Waitlist type="second" />
         </div>
         <Footer />
