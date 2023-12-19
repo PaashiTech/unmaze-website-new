@@ -12,13 +12,20 @@ const Navbar: React.FC<NavbarProps> = ({
   button = navbarButtonData,
 }) => {
   return (
-    <nav className="sticky top-0 z-50 flex w-full items-center justify-center gap-12 bg-gradient-unmaze-2 p-5 shadow-nav-shadow lg:justify-between lg:px-[5.625rem] lg:py-[1.25rem]">
+    <nav
+      data-testid="navbar"
+      className="sticky top-0 z-50 flex w-full items-center justify-center gap-12 bg-gradient-unmaze-2 p-5 shadow-nav-shadow lg:justify-between lg:px-[5.625rem] lg:py-[1.25rem]"
+    >
       <a href="/">
         <img src={logo} alt="unmaze-logo" />
       </a>
       <div className="hidden items-center  font-font-body text-xl tracking-wider text-primary-green lg:flex lg:gap-12 xl:gap-20">
         {/* Links */}
-        {links?.map((link) => <a href={link.redirectTo}>{link.linkText}</a>)}
+        {links?.map((link) => (
+          <a data-testid="navbar-link" href={link.redirectTo}>
+            {link.linkText}
+          </a>
+        ))}
 
         {/* Button */}
         <a
