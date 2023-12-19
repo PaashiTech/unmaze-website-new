@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="flex flex-col items-center bg-primary-green p-5 pb-9 text-content-white lg:px-[5.625rem] lg:py-16">
       <div className="flex w-full flex-col gap-10 lg:flex-row lg:gap-6">
-        <div className="flex w-full flex-col gap-4 lg:mr-12">
+        <div className="flex flex-col gap-4 lg:mr-12">
           <img src={logo} alt="unmaze-logo" className="w-40 lg:w-[15rem]" />
           <div className="flex justify-between lg:flex-col lg:items-start lg:gap-6">
             <Text
@@ -22,7 +22,7 @@ const Footer = () => {
             <MadeInIndiaLogo />
           </div>
         </div>
-        <div className="flex justify-between lg:w-full lg:justify-start lg:gap-20">
+        <div className="flex justify-between lg:w-full lg:max-w-[30rem]">
           <div className="flex flex-col gap-3 lg:gap-6">
             <Heading variant="sub-heading-1" className="text-primary-yellow">
               About Us
