@@ -7,14 +7,11 @@ import { footerLinks, socialIconLinks } from "./footerData";
 const Footer = () => {
   return (
     <div className="flex flex-col items-center bg-primary-green p-5 pb-9 text-content-white lg:px-[5.625rem] lg:py-16">
-      <div className="flex w-full flex-col gap-10 lg:flex-row lg:gap-6">
+      <div className="flex w-full flex-col gap-10 lg:flex-row lg:justify-between lg:gap-6">
         <div className="flex flex-col gap-4 lg:mr-12">
           <img src={logo} alt="unmaze-logo" className="w-40 lg:w-[15rem]" />
-          <div className="flex justify-between lg:gap-6">
-            <Text
-              size="md"
-              className="max-w-xl pr-4 text-content-white lg:pr-8"
-            >
+          <div className="flex justify-between ">
+            <Text size="md" className="max-w-xl pr-4 text-content-white">
               Unmaze is the financial co-pilot you deserve. Invest smarter, save
               more, and achieve your financial goals faster.
             </Text>
