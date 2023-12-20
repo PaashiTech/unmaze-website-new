@@ -17,7 +17,7 @@ const Footer = () => {
               className="max-w-xl pr-4 text-content-white lg:pr-8"
             >
               Unmaze is the financial co-pilot you deserve. Invest smarter, save
-              more, and achieve your financial goals faster
+              more, and achieve your financial goals faster.
             </Text>
             <MadeInIndiaLogo />
           </div>

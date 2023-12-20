@@ -3,7 +3,7 @@ import { NavbarLink } from "./Navbar.types";
 import { navbarButtonData, navbarLinksData } from "./navbarData";
 
 interface NavbarProps {
-  links?: NavbarLink[];
+  links?: (NavbarLink & { id: number })[];
   button?: NavbarLink;
 }
 
@@ -18,7 +18,11 @@ const Navbar: React.FC<NavbarProps> = ({
       </a>
       <div className="hidden items-center  font-font-body text-xl tracking-wider text-primary-green lg:flex lg:gap-12 xl:gap-20">
         {/* Links */}
-        {links?.map((link) => <a href={link.redirectTo}>{link.linkText}</a>)}
+        {links?.map((link) => (
+          <a href={link.redirectTo} key={link.id}>
+            {link.linkText}
+          </a>
+        ))}
 
         {/* Button */}
         <a
