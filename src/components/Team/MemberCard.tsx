@@ -38,7 +38,7 @@ const MemberCard: React.FC<MemberCardProps> = ({
       <div className="flex flex-col gap-3 text-center">
         <Heading
           variant="heading-3"
-          className="whitespace-pre-line text-[#fff000] md:text-[2rem] md:leading-10 lg:px-5"
+          className="max-w-[9.5rem] whitespace-pre-line text-[#fff000] md:px-5 md:text-[2rem] md:leading-10 lg:max-w-none"
         >
           <span className="mr-2 inline-block align-top lg:w-[2rem]">
             <img
