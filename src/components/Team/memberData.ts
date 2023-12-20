@@ -32,9 +32,9 @@ export const memberData: [Member, Member][] = [
       image: Suman,
       name: "Suman Tiwari",
       bio: `Tech Wizard,
+            SEBI-certified RIA,
             Strategy & Operations,
-            ex-Nomura, ex-OYO
-            SEBI-certified RIA`,
+            ex-Nomura, ex-OYO`,
       reverse: true,
     },
   ],
