@@ -28,7 +28,7 @@ const Navbar: React.FC<NavbarProps> = ({
         {/* Button */}
         <a
           href={button?.redirectTo}
-          className="rounded-full border-2 border-primary-green px-9 py-3 font-medium"
+          className="rounded-full border-2 border-primary-green px-[1.75rem] py-[0.75rem] font-medium"
         >
           <Text size="sm">{button?.linkText}</Text>
         </a>
