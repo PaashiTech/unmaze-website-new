@@ -3,6 +3,8 @@ import starYellowMobile from "../../assets/stars/star-yellow-mobile.svg";
 import starYellowDesktop from "../../assets/stars/star-yellow-desktop.svg";
 import { useResponsive } from "../../hooks/useResponsive";
 import "./MembarCard.css";
+import Heading from "../_UI/Typography/Heading";
+import Text from "../_UI/Typography/Text";
 
 type MemberCardProps = {
   image: string;
@@ -34,7 +36,10 @@ const MemberCard: React.FC<MemberCardProps> = ({
       </div>
 
       <div className="flex flex-col gap-3 text-center">
-        <p className="px-4 font-font-heading text-xl font-bold leading-6 tracking-wider text-[#fff000] md:text-[2rem] md:leading-10">
+        <Heading
+          variant="heading-3"
+          className="px-4 text-[#fff000] md:text-[2rem] md:leading-10"
+        >
           <span className="mr-2 inline-block">
             <img
               src={
@@ -44,10 +49,10 @@ const MemberCard: React.FC<MemberCardProps> = ({
             />
           </span>
           {name}
-        </p>
-        <p className="font-font-body text-xs leading-4 tracking-[0.1rem] text-white md:px-6 md:text-base md:leading-5 md:tracking-[0.04rem]">
+        </Heading>
+        <Text size="xs" className="text-white">
           {bio}
-        </p>
+        </Text>
       </div>
     </div>
   );
