@@ -45,7 +45,7 @@ export const socialIconLinks: SocialIconLink[] = [
     id: 2,
     icon: instagramIcon,
     title: "instagram-icon",
-    href: "https://www.linkedin.com/company/unmaze-app/about/",
+    href: "https://www.instagram.com/unmaze.app/",
   },
   {
     id: 3,
