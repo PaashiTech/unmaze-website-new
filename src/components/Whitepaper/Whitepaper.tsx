@@ -15,10 +15,7 @@ const Whitepaper = () => {
         <div className="flex flex-col gap-4 ">
           <div className="flex flex-col gap-[0.375rem] font-font-heading lg:gap-3">
             <Heading variant="sub-heading-2">Our Research</Heading>
-            <Heading
-              variant="heading-2"
-              className="text-2xl font-semibold leading-6 tracking-[0.06rem] lg:text-5xl"
-            >
+            <Heading variant="heading-2">
               <StarIcon /> The art of mindful investing
             </Heading>
           </div>
