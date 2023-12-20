@@ -44,7 +44,7 @@ export const memberData: [Member, Member][] = [
       id: 4,
       image: Amogh,
       name: "Amogh Kulkarni",
-      bio: "Sr. Software Engineer, MS(CS), Vanderbilt Habitual tinkerer",
+      bio: "Sr. Software Engineer, MS(CS) @Vanderbilt, Habitual tinkerer",
       reverse: true,
     },
   ],
