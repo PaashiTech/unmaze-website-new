@@ -1,5 +1,4 @@
 import logo from "../../assets/unmaze-logo-light.svg";
-import "./Footer.css";
 import Text from "../_UI/Typography/Text";
 import MadeInIndiaLogo from "../_UI/MadeInIndiaLogo";
 import Heading from "../_UI/Typography/Heading";
@@ -11,7 +10,7 @@ const Footer = () => {
       <div className="flex w-full flex-col gap-10 lg:flex-row lg:gap-6">
         <div className="flex flex-col gap-4 lg:mr-12">
           <img src={logo} alt="unmaze-logo" className="w-40 lg:w-[15rem]" />
-          <div className="flex justify-between lg:flex-col lg:items-start lg:gap-6">
+          <div className="flex justify-between lg:gap-6">
             <Text
               size="md"
               className="max-w-xl pr-4 text-content-white lg:pr-8"
