@@ -20,7 +20,7 @@ function App() {
     <div className="relative flex h-[100dvh] flex-col">
       <Navbar />
       <div
-        className={`h-[calc(100dvh - 4.75rem)] flex flex-col overflow-x-hidden overflow-y-scroll scroll-smooth`}
+        className={`flex h-[calc(100dvh-4.5rem)] flex-col overflow-x-hidden overflow-y-scroll scroll-smooth`}
       >
         <Hero />
         {/* <div ref={contaierRefOne} data-testid="waitlist-top"> */}

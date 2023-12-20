@@ -13,7 +13,7 @@ const Navbar: React.FC<NavbarProps> = ({
   button = navbarButtonData,
 }) => {
   return (
-    <nav className="sticky top-0 z-50 flex h-[4rem] w-full items-center justify-center gap-12 bg-gradient-unmaze-2 px-[1.25rem] py-[1rem] shadow-nav-shadow lg:justify-between lg:px-[5.625rem] lg:py-[0.75rem]">
+    <nav className="sticky top-0 z-50 flex h-[4.5rem] w-full items-center justify-center gap-12 bg-gradient-unmaze-2 px-[1.25rem] py-[1rem] shadow-nav-shadow lg:justify-between lg:px-[5.625rem] lg:py-[0.875rem]">
       <a href="/">
         <img src={logo} alt="unmaze-logo" />
       </a>
