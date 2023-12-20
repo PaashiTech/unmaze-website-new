@@ -6,7 +6,7 @@ import { footerLinks, socialIconLinks } from "./footerData";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col items-center bg-primary-green p-5 pb-9 text-content-white lg:px-[5.625rem] lg:py-16">
+    <div className="flex flex-col items-center bg-primary-green p-5 pb-8 text-content-white lg:px-[5.625rem] lg:pb-8 lg:pt-16">
       <div className="flex w-full flex-col gap-10 lg:flex-row lg:justify-between lg:gap-6">
         <div className="flex flex-col gap-4 lg:mr-12">
           <img src={logo} alt="unmaze-logo" className="w-40 lg:w-[15rem]" />
@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className="my-6 w-full lg:my-12" />
+      <hr className="my-6 w-full lg:my-8" />
       <Text size="xs">Copyright © 2023 Unmaze.app | All rights reserved</Text>
     </div>
   );
