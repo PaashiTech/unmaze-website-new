@@ -22,7 +22,7 @@ const MemberCard: React.FC<MemberCardProps> = ({
   const { screenType } = useResponsive();
 
   return (
-    <div className="flex max-w-md items-center gap-4 px-5 md:w-[18.5rem] md:flex-col md:gap-[1.5rem]">
+    <div className="flex max-w-md items-center justify-between gap-4 px-5 md:w-[18.5rem] md:flex-col md:gap-[1.5rem]">
       <div
         className={`h-[9.5rem] w-[9.5rem] overflow-hidden rounded-[1.875rem] ${
           reverse ? "order-1" : "order-none"
@@ -38,7 +38,7 @@ const MemberCard: React.FC<MemberCardProps> = ({
       <div className="flex flex-col gap-3 text-center">
         <Heading
           variant="heading-3"
-          className="px-4 text-[#fff000] md:text-[2rem] md:leading-10"
+          className="whitespace-pre-line text-[#fff000] md:text-[2rem] md:leading-10 lg:px-4"
         >
           <span className="mr-2 inline-block">
             <img
@@ -50,7 +50,7 @@ const MemberCard: React.FC<MemberCardProps> = ({
           </span>
           {name}
         </Heading>
-        <Text size="xs" className="text-white">
+        <Text size="xs" className="whitespace-pre-line text-white md:px-2">
           {bio}
         </Text>
       </div>

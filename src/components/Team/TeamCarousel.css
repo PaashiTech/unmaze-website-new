@@ -15,7 +15,7 @@
   justify-content: center;
 }
 
-.slick-slide > div > div {
+.slick-slide > div > .carousel-card {
   display: flex;
 }
 

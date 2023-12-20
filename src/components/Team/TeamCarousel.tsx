@@ -75,7 +75,7 @@ const TeamCarousel = () => {
         <Slider {...settings} className="flex">
           {memberData.map((memberPair) => {
             return (
-              <div className="flex flex-col gap-8 py-8">
+              <div className="carousel-card flex flex-col gap-8 py-8">
                 {memberPair.map((member) => (
                   <MemberCard
                     key={member.id}
