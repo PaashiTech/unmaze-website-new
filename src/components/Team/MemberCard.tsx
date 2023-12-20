@@ -38,14 +38,15 @@ const MemberCard: React.FC<MemberCardProps> = ({
       <div className="flex flex-col gap-3 text-center">
         <Heading
           variant="heading-3"
-          className="whitespace-pre-line text-[#fff000] md:text-[2rem] md:leading-10 lg:px-4"
+          className="whitespace-pre-line text-[#fff000] md:text-[2rem] md:leading-10 lg:px-5"
         >
-          <span className="mr-2 inline-block w-[2rem] align-middle">
+          <span className="mr-2 inline-block align-top lg:w-[2rem]">
             <img
               src={
                 screenType === "MOBILE" ? starYellowMobile : starYellowDesktop
               }
               alt="star"
+              width="100%"
             />
           </span>
           {name}
