@@ -14,7 +14,7 @@ const Careers = () => {
     >
       <div className="flex flex-grow items-center rounded-[1.25rem] bg-white px-9 py-12 text-primary-green lg:max-w-[50%] lg:rounded-none lg:bg-transparent lg:bg-gradient-unmaze-1 lg:px-[5.625rem] lg:py-16">
         <div className="flex flex-col gap-4  lg:gap-6">
-          <div className="flex flex-col gap-[0.375rem] font-font-heading lg:gap-3 lg:px-4">
+          <div className="flex flex-col gap-[0.375rem] font-font-heading lg:gap-3">
             <Heading variant="sub-heading-2">Work with us</Heading>
             <Heading
               variant="heading-2"
