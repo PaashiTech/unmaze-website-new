@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Text from "../_UI/Typography/Text";
 
 const encode = (data: { [key: string]: string }) => {
   return Object.keys(data)
@@ -38,8 +39,9 @@ const Signup = () => {
       method="post"
       data-netlify="true"
       onSubmit={handleSubmit}
+      className="w-full"
     >
-      <div className="relative flex w-full items-center justify-center font-font-body  lg:w-[28.25rem]">
+      <div className="mx-auto flex w-full max-w-[30rem] items-center justify-center rounded-full  border-[1px] border-solid border-primary-yellow font-font-body">
         <input type="hidden" name="form-name" value="contact" />
         <input
           type="email"
@@ -47,13 +49,15 @@ const Signup = () => {
           required
           placeholder="Email address"
           onChange={handleOnChange}
-          className="placeholder:text-placeholder w-full rounded-full border-[1px] border-solid border-primary-yellow bg-white px-[2.25rem]  py-[0.875rem] pr-[9rem] lg:px-11 lg:py-[1rem] lg:pr-[12rem] lg:text-2xl"
+          className="w-full  rounded-l-full bg-white px-[1.5rem] py-[0.75rem]  placeholder:text-placeholder lg:px-[1.75rem] lg:py-[0.8rem] lg:text-xl"
         />
         <button
           type="submit"
-          className="absolute right-0 rounded-full bg-gradient-unmaze-hero px-[2.25rem] py-[0.875rem] font-semibold text-primary-green lg:px-12 lg:py-[1rem] lg:text-2xl"
+          className="flex shrink-0 items-center rounded-r-full bg-gradient-unmaze-hero px-[1.5rem] py-[0.87rem] font-semibold text-primary-green lg:px-[1.75rem] lg:py-[0.92rem]"
         >
-          Sign up
+          <Text size="md" className="font-semibold">
+            Sign up
+          </Text>
         </button>
       </div>
     </form>
