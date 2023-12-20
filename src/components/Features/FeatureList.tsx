@@ -11,9 +11,7 @@ const Feature: React.FC<FeatureProps> = ({ icon, text }) => {
   return (
     <div className="flex gap-5 px-4">
       <img src={icon} alt="feature-icon" />
-      <Text size="xl" className="font-font-heading font-medium">
-        {text}
-      </Text>
+      <Text size="xl">{text}</Text>
     </div>
   );
 };

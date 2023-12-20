@@ -19,23 +19,17 @@ const Whitepaper = () => {
               variant="heading-2"
               className="text-2xl font-semibold leading-6 tracking-[0.06rem] lg:text-5xl"
             >
-              <StarIcon /> The art of
-              <br />
-              mindful investing
+              <StarIcon /> The art of mindful investing
             </Heading>
           </div>
           <div className="flex gap-6 lg:gap-6">
             <Text size="lg" className="lg:hidden">
               Bridging the gap between theory and practice
             </Text>
-            <Text size="lg" className="hidden lg:block">
-              In this paper, Unmaze.app gives you actionable
-              <br />
-              insights on two most widely used decision frameworks
-              <br />
-              (MVT and BPT), along with a cutting edge technique
-              <br />
-              that combines both.
+            <Text size="lg" className="hidden lg:block lg:max-w-[60.5rem]">
+              In this paper, Unmaze.app gives you actionable insights on two
+              most widely used decision frameworks (MVT and BPT), along with a
+              cutting edge technique that combines both.
             </Text>
             <a
               href="/Unmaze__Article__Portfolio_Optimization.pdf"
