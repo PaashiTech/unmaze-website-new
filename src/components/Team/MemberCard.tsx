@@ -22,11 +22,11 @@ const MemberCard: React.FC<MemberCardProps> = ({
   const { screenType } = useResponsive();
 
   return (
-    <div className="flex max-w-md items-center gap-4 px-5 md:w-[18.5rem] md:flex-col md:gap-6">
+    <div className="flex max-w-md items-center gap-4 px-5 md:w-[18.5rem] md:flex-col md:gap-[1.5rem]">
       <div
         className={`h-[9.5rem] w-[9.5rem] overflow-hidden rounded-[1.875rem] ${
           reverse ? "order-1" : "order-none"
-        } shrink-0 md:order-none md:h-[13.125rem] md:w-[13.125rem]`}
+        } shrink-0 md:order-none md:h-[9.375rem] md:w-[9.375rem]`}
       >
         <img
           src={image}
