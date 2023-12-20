@@ -34,15 +34,15 @@ const headingVariants = cva("font-font-heading", {
   variants: {
     variant: {
       "heading-1":
-        "font-semibold text-[3rem] lg:text-[4.5rem] leading-[3rem] lg:leading-[5rem] tracking-[0.12rem] lg:tracking-[0.18rem]",
+        "font-semibold text-[3rem] lg:text-[4rem] leading-[3rem] lg:leading-[4.5rem] tracking-[0.12rem] lg:tracking-[0.16rem]",
       "heading-2":
-        "font-semibold text-[1.5rem] lg:text-[3.5rem] leading-[1.5rem] lg:leading-[3.5rem] tracking-[0.06rem] lg:tracking-[0.12rem]",
+        "font-semibold text-[1.5rem] lg:text-[2.5rem] leading-[1.5rem] lg:leading-[3rem] tracking-[0.06rem] lg:tracking-[0.1rem]",
       "heading-3":
-        "font-bold text-[1.25rem] lg:text-[2rem] leading-[1.5rem] lg:leading-[2.5rem] tracking-[0.05rem] lg:tracking-[0.08rem]",
+        "font-bold text-[1.25rem] lg:text-[1.75rem] leading-[1.5rem] lg:leading-[2.25rem] tracking-[0.05rem] lg:tracking-[0.07rem]",
       "sub-heading-1":
-        "font-medium text-[1.25rem] lg:text-[2rem] leading-[1.5rem] lg:leading-[2.5rem] tracking-[0.15rem] lg:tracking-[0.32rem]",
+        "font-medium text-[1.25rem] lg:text-[1.75rem] leading-[1.5rem] lg:leading-[2.25rem] tracking-[0.15rem] lg:tracking-[0.21rem]",
       "sub-heading-2":
-        "font-medium text-[0.875rem] lg:text-[1.5rem] leading-[1.125rem] lg:leading-[2rem] tracking-[0.105rem] lg:tracking-[0.18rem]",
+        "font-medium text-[0.875rem] lg:text-[1.25rem] leading-[1.125rem] lg:leading-[1.5rem] tracking-[0.105rem] lg:tracking-[0.15rem]",
     },
   },
   defaultVariants: {
