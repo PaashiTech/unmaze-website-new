@@ -20,7 +20,8 @@ const Signup = () => {
         .then(() => {
           alert("Thank you for your interest in Unmaze!");
           setTimeout(() => {
-            window.location.replace("https://bit.ly/unmz");
+            window.open("https://forms.office.com/r/XfgPg39D3i");
+            setEmail("");
           }, 2000);
         })
         .catch((error) => alert(error));
@@ -46,6 +47,7 @@ const Signup = () => {
         <input
           type="email"
           name="email"
+          value={email}
           required
           placeholder="Email address"
           onChange={handleOnChange}
