@@ -29,7 +29,7 @@ const Careers = () => {
               finance!
             </Text>
             <a
-              href="https://www.linkedin.com/company/unmaze-app/jobs/"
+              href="https://wellfound.com/company/unmaze-app/jobs"
               target="_blank"
               className="flex shrink-0 items-center"
             >
