@@ -1,4 +1,5 @@
 import logo from "../../assets/unmaze-logo-dark.svg";
+import Text from "../_UI/Typography/Text";
 import { NavbarLink } from "./Navbar.types";
 import { navbarButtonData, navbarLinksData } from "./navbarData";
 
@@ -12,7 +13,7 @@ const Navbar: React.FC<NavbarProps> = ({
   button = navbarButtonData,
 }) => {
   return (
-    <nav className="sticky top-0 z-50 flex w-full items-center justify-center gap-12 bg-gradient-unmaze-2 p-5 shadow-nav-shadow lg:justify-between lg:px-[5.625rem] lg:py-[1.25rem]">
+    <nav className="sticky top-0 z-50 flex h-[4rem] w-full items-center justify-center gap-12 bg-gradient-unmaze-2 px-[1.25rem] py-[1rem] shadow-nav-shadow lg:justify-between lg:px-[5.625rem] lg:py-[0.75rem]">
       <a href="/">
         <img src={logo} alt="unmaze-logo" />
       </a>
@@ -20,7 +21,7 @@ const Navbar: React.FC<NavbarProps> = ({
         {/* Links */}
         {links?.map((link) => (
           <a href={link.redirectTo} key={link.id}>
-            {link.linkText}
+            <Text size="sm">{link.linkText}</Text>
           </a>
         ))}
 
@@ -29,7 +30,7 @@ const Navbar: React.FC<NavbarProps> = ({
           href={button?.redirectTo}
           className="rounded-full border-2 border-primary-green px-9 py-3 font-medium"
         >
-          {button?.linkText}
+          <Text size="sm">{button?.linkText}</Text>
         </a>
       </div>
     </nav>
