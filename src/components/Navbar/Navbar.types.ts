@@ -1,4 +1,4 @@
-export interface NavbarLink {
+export type NavbarLink = {
   linkText: string;
   redirectTo: string;
-}
+};

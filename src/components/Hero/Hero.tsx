@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="relative flex flex-col gap-12 overflow-x-clip bg-gradient-unmaze-hero px-[1.25rem] py-[6.45rem] text-center text-primary-green lg:px-[5.625rem] lg:py-[15rem]"
+      className="relative flex flex-col items-center justify-center gap-12 overflow-x-clip bg-gradient-unmaze-hero px-[1.25rem] py-[6.45rem] text-center text-primary-green lg:min-h-[calc(100dvh-4.5rem)] lg:px-[5.625rem] lg:py-[15rem]"
     >
       <BackgroundLogo />
       <div className="flex flex-col items-center gap-3 lg:gap-4 ">

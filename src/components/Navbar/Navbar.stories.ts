@@ -33,10 +33,12 @@ export const LinksWithButton: Story = {
   args: {
     links: [
       {
+        id: 1,
         linkText: "Link 1",
         redirectTo: "#link1",
       },
       {
+        id: 2,
         linkText: "Link 2",
         redirectTo: "#link2",
       },

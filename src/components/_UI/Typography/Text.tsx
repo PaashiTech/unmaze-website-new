@@ -27,22 +27,22 @@ const textVariants = cva("font-font-body", {
       /*
        * Body-4
        */
-      sm: "text-[0.875rem] lg:text-[1.25rem] leading-[1.125rem] lg:leading-[1.5rem] tracking-[0.0525rem] lg:tracking-[0.075rem]",
+      sm: "text-[0.875rem] lg:text-[1rem] leading-[1.125rem] lg:leading-[1.25rem] tracking-[0.0525rem] lg:tracking-[0.06rem]",
 
       /*
        * Body-3
        */
-      md: "text-[1rem] lg:text-[1.5rem] leading-[1.25rem] lg:leading-[2rem] tracking-[0.06rem] lg:tracking-[0.09rem]",
+      md: "text-[1rem] lg:text-[1.25rem] leading-[1.25rem] lg:leading-[1.5rem] tracking-[0.06rem] lg:tracking-[0.075rem]",
 
       /*
        * Body-2
        */
-      lg: "text-[1.125rem] lg:text-[1.75rem] leading-[1.5rem] lg:leading-[2.5rem] tracking-[0.0675rem] lg:tracking-[0.105rem]",
+      lg: "text-[1.125rem] lg:text-[1.5rem] leading-[1.5rem] lg:leading-[2rem] tracking-[0.0675rem] lg:tracking-[0.09rem]",
 
       /*
        * Body-1
        */
-      xl: "text-[1.25rem] lg:text-[2rem] leading-[1.75rem] lg:leading-[2.5rem] tracking-[0.05rem] lg:tracking-[0.08rem]",
+      xl: "font-medium text-[1.25rem] lg:text-[1.625rem] leading-[1.75rem] lg:leading-[2.25rem] tracking-[0.05rem] lg:tracking-[0.105rem]",
     },
   },
   defaultVariants: {

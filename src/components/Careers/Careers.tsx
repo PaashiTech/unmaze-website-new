@@ -1,7 +1,7 @@
-import nextButtonDesktop from "../../assets/next-button/next-desktop.png";
-import nextButtonMobile from "../../assets/next-button/next-mobile.png";
+import nextButtonDesktop from "../../assets/next-button/next-desktop.svg";
+import nextButtonMobile from "../../assets/next-button/next-mobile.svg";
 
-import officeImage from "../../assets/office.jpg";
+import teamPhoto from "../../assets/team-photo.png";
 import Heading from "../_UI/Typography/Heading";
 import StarIcon from "../_UI/StarIcon";
 import Text from "../_UI/Typography/Text";
@@ -12,9 +12,9 @@ const Careers = () => {
       id="careers"
       className="flex h-fit justify-center bg-primary-green px-5 py-8 lg:p-0"
     >
-      <div className="flex items-center rounded-[1.25rem] bg-white px-9 py-12 text-primary-green lg:rounded-none lg:bg-transparent lg:bg-gradient-unmaze-1 lg:px-[5.625rem] lg:py-16">
-        <div className="flex flex-col gap-4 lg:gap-6">
-          <div className="flex flex-col gap-[0.375rem] font-font-heading lg:gap-3 lg:px-4">
+      <div className="flex flex-grow items-center rounded-[1.25rem] bg-white px-9 py-12 text-primary-green lg:max-w-[50%] lg:rounded-none lg:bg-transparent lg:bg-gradient-unmaze-1 lg:px-[5.625rem] lg:py-16">
+        <div className="flex flex-col gap-4  lg:gap-6">
+          <div className="flex flex-col gap-[0.375rem] font-font-heading lg:gap-3">
             <Heading variant="sub-heading-2">Work with us</Heading>
             <Heading
               variant="heading-2"
@@ -25,10 +25,11 @@ const Careers = () => {
           </div>
           <div className="flex gap-0 lg:gap-8">
             <Text size="lg">
-              Be part of the change in the way we think about personal finance!
+              Be a part of the change in the way we think about personal
+              finance!
             </Text>
             <a
-              href="https://www.linkedin.com/company/unmaze-app/jobs/"
+              href="https://wellfound.com/company/unmaze-app/jobs"
               target="_blank"
               className="flex shrink-0 items-center"
             >
@@ -43,11 +44,11 @@ const Careers = () => {
           </div>
         </div>
       </div>
-      <div className=" hidden lg:block lg:w-full lg:overflow-hidden">
+      <div className="hidden lg:block lg:flex-grow lg:overflow-hidden">
         <img
-          src={officeImage}
-          alt="office"
-          className="h-full w-full -translate-x-[10rem] -translate-y-[3rem] scale-[1.5] object-cover"
+          src={teamPhoto}
+          alt="team-photo"
+          className="h-full w-full object-cover"
         />
       </div>
     </div>

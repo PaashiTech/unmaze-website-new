@@ -1,8 +1,10 @@
 import React from "react";
-import starYellowMobile from "../../assets/stars/star-yellow-mobile.png";
-import starYellowDesktop from "../../assets/stars/star-yellow-desktop.png";
+import starYellowMobile from "../../assets/stars/star-yellow-mobile.svg";
+import starYellowDesktop from "../../assets/stars/star-yellow-desktop.svg";
 import { useResponsive } from "../../hooks/useResponsive";
 import "./MembarCard.css";
+import Heading from "../_UI/Typography/Heading";
+import Text from "../_UI/Typography/Text";
 
 type MemberCardProps = {
   image: string;
@@ -20,11 +22,11 @@ const MemberCard: React.FC<MemberCardProps> = ({
   const { screenType } = useResponsive();
 
   return (
-    <div className="flex max-w-md items-center gap-4 px-5 md:w-[18.5rem] md:flex-col md:gap-6">
+    <div className="flex max-w-md items-center justify-between gap-4 px-5 md:w-[18.5rem] md:flex-col md:gap-[1.5rem]">
       <div
         className={`h-[9.5rem] w-[9.5rem] overflow-hidden rounded-[1.875rem] ${
           reverse ? "order-1" : "order-none"
-        } shrink-0 md:order-none md:h-[13.125rem] md:w-[13.125rem]`}
+        } shrink-0 md:order-none md:h-[9.375rem] md:w-[9.375rem]`}
       >
         <img
           src={image}
@@ -34,20 +36,24 @@ const MemberCard: React.FC<MemberCardProps> = ({
       </div>
 
       <div className="flex flex-col gap-3 text-center">
-        <p className="px-4 font-font-heading text-xl font-bold leading-6 tracking-wider text-[#fff000] md:text-[2rem] md:leading-10">
-          <span className="mr-2 inline-block">
+        <Heading
+          variant="heading-3"
+          className="max-w-[9.5rem] whitespace-pre-line text-[#fff000] md:px-5 md:text-[2rem] md:leading-10 lg:max-w-none"
+        >
+          <span className="mr-2 inline-block align-top lg:w-[2rem]">
             <img
               src={
                 screenType === "MOBILE" ? starYellowMobile : starYellowDesktop
               }
               alt="star"
+              width="100%"
             />
           </span>
           {name}
-        </p>
-        <p className="font-font-body text-xs leading-4 tracking-[0.1rem] text-white md:px-6 md:text-base md:leading-5 md:tracking-[0.04rem]">
+        </Heading>
+        <Text size="xs" className="whitespace-pre-line text-white md:px-2">
           {bio}
-        </p>
+        </Text>
       </div>
     </div>
   );

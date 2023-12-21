@@ -16,7 +16,7 @@ const Waitlist: React.FC<WaitlistProps> = ({ type }) => {
       data-testid="waitlist"
       className={`${waitlistBg} flex flex-col items-center gap-4 px-5 py-8 lg:scroll-m-[95.2px] lg:gap-6 lg:px-[5.625rem] lg:py-[4rem]`}
     >
-      <div className="flex w-full flex-col items-center gap-6 lg:gap-10">
+      <div className="z-10 flex w-full flex-col items-center gap-6 lg:gap-10">
         <Heading className="text-white" variant="heading-2">
           <span className="bg-gradient-unmaze-4 bg-clip-text text-transparent">
             Join
