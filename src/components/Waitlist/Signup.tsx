@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Text from "../_UI/Typography/Text";
+import { toast } from "react-toastify";
+import CustomToast from "../_UI/CustomToast";
 
 const encode = (data: { [key: string]: string }) => {
   return Object.keys(data)
@@ -9,10 +11,10 @@ const encode = (data: { [key: string]: string }) => {
 
 const Signup = () => {
   const [email, setEmail] = useState<string>("");
-  const [submitted, setSubmitted] = useState<boolean>(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    setSubmitted(() => true);
+    setEmail("");
+    toast(<CustomToast />);
     if (email) {
       fetch("/", {
         method: "POST",
@@ -22,9 +24,7 @@ const Signup = () => {
         .then(() => {
           setTimeout(() => {
             window.open("https://forms.office.com/r/XfgPg39D3i");
-            setEmail("");
-            setSubmitted(false);
-          }, 2000);
+          }, 3000);
         })
         .catch((error) => alert(error));
     }
@@ -66,11 +66,6 @@ const Signup = () => {
           </button>
         </div>
       </form>
-      {submitted && (
-        <Text size="md" className="text-primary-yellow">
-          Thank you for your interest in Unmaze!
-        </Text>
-      )}
     </div>
   );
 };

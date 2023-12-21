@@ -28,6 +28,8 @@ export default {
         "gradient-unmaze-hero":
           "linear-gradient(98deg, #fff000 5.1%, #ccfd62 92.77%)",
         "gradient-unmaze-team": "linear-gradient(to right, #FFF000 , #CCFD62)",
+        "gradient-toast":
+          "linear-gradient(100deg, #035E5D 0.37%, #023A39 100.37%);",
       },
       boxShadow: {
         "nav-shadow": "0px 1px 8px 0px rgba(2, 58, 57, 0.20);",

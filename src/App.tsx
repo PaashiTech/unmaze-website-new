@@ -1,3 +1,5 @@
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import Careers from "./components/Careers/Careers";
 import Features from "./components/Features/Features";
@@ -41,6 +43,15 @@ function App() {
           <WaitlistSticky type="second" isWaitListVisible />
         )} */}
       </div>
+      <ToastContainer
+        position={window.innerWidth <= 1024 ? "top-center" : "bottom-right"}
+        autoClose={2200}
+        hideProgressBar={false}
+        newestOnTop={false}
+        pauseOnFocusLoss={false}
+        closeButton={false}
+        rtl={false}
+      />
     </div>
   );
 }
