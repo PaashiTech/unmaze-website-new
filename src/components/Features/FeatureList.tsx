@@ -11,7 +11,7 @@ type FeatureProps = {
 const Feature: React.FC<FeatureProps> = ({ iconMobile, iconDesktop, text }) => {
   return (
     <div className="flex items-center gap-5 px-4">
-      <picture>
+      <picture className="shrink-0">
         <source srcSet={iconDesktop} media="(min-width: 1024px)" />
         <img src={iconMobile} alt="feature-icon" />
       </picture>
