@@ -15,6 +15,7 @@ test.describe("General", () => {
 
   test("should redirect to MS form using Signup button", async ({
     page,
+    context,
     isMobile,
   }) => {
     page.on("dialog", (dialog) => {
@@ -48,6 +49,7 @@ test.describe("General", () => {
     await emailInput.fill("test@test.com");
     await signupButton.click();
     await page.waitForTimeout(4000);
-    await expect(page).toHaveURL(/forms.office.com/);
+    const tabs = await context.pages();
+    await expect(await tabs[1].title()).toMatch(/Personal Finance/);
   });
 });
