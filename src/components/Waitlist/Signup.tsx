@@ -9,8 +9,10 @@ const encode = (data: { [key: string]: string }) => {
 
 const Signup = () => {
   const [email, setEmail] = useState<string>("");
+  const [submitted, setSubmitted] = useState<boolean>(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    setSubmitted(() => true);
     if (email) {
       fetch("/", {
         method: "POST",
@@ -21,8 +23,8 @@ const Signup = () => {
           setTimeout(() => {
             window.open("https://forms.office.com/r/XfgPg39D3i");
             setEmail("");
+            setSubmitted(false);
           }, 2000);
-          alert("Thank you for your interest in Unmaze!");
         })
         .catch((error) => alert(error));
     }
@@ -35,34 +37,41 @@ const Signup = () => {
   };
 
   return (
-    <form
-      name="contact"
-      method="post"
-      data-netlify="true"
-      onSubmit={handleSubmit}
-      className="w-full"
-    >
-      <div className="mx-auto flex w-full max-w-[30rem] items-center justify-center rounded-full  border-[1px] border-solid border-primary-yellow font-font-body">
-        <input type="hidden" name="form-name" value="contact" />
-        <input
-          type="email"
-          name="email"
-          value={email}
-          required
-          placeholder="Email address"
-          onChange={handleOnChange}
-          className="w-full rounded-l-full bg-white px-[1.5rem] py-[0.75rem]  placeholder:text-placeholder lg:px-[1.75rem] lg:py-[0.88rem] lg:text-xl"
-        />
-        <button
-          type="submit"
-          className="flex shrink-0 items-center rounded-r-full bg-gradient-unmaze-hero px-[1.5rem] py-[0.88rem] font-semibold text-primary-green lg:px-[2.25rem] lg:py-[1.01rem]"
-        >
-          <Text size="md" className="font-semibold">
-            Sign up
-          </Text>
-        </button>
-      </div>
-    </form>
+    <div className="flex flex-col items-center gap-4">
+      <form
+        name="contact"
+        method="post"
+        data-netlify="true"
+        onSubmit={handleSubmit}
+        className="w-full"
+      >
+        <div className="mx-auto flex w-full max-w-[30rem] items-center justify-center rounded-full  border-[1px] border-solid border-primary-yellow font-font-body">
+          <input type="hidden" name="form-name" value="contact" />
+          <input
+            type="email"
+            name="email"
+            value={email}
+            required
+            placeholder="Email address"
+            onChange={handleOnChange}
+            className="w-full rounded-l-full bg-white px-[1.5rem] py-[0.75rem]  placeholder:text-placeholder lg:px-[1.75rem] lg:py-[0.88rem] lg:text-xl"
+          />
+          <button
+            type="submit"
+            className="flex shrink-0 items-center rounded-r-full bg-gradient-unmaze-hero px-[1.5rem] py-[0.88rem] font-semibold text-primary-green lg:px-[2.25rem] lg:py-[1.01rem]"
+          >
+            <Text size="md" className="font-semibold">
+              Sign up
+            </Text>
+          </button>
+        </div>
+      </form>
+      {submitted && (
+        <Text size="md" className="text-primary-yellow">
+          Thank you for your interest in Unmaze!
+        </Text>
+      )}
+    </div>
   );
 };
 
