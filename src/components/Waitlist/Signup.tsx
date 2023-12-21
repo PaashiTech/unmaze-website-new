@@ -18,11 +18,11 @@ const Signup = () => {
         body: encode({ "form-name": "contact", email: email }),
       })
         .then(() => {
-          alert("Thank you for your interest in Unmaze!");
           setTimeout(() => {
             window.open("https://forms.office.com/r/XfgPg39D3i");
             setEmail("");
           }, 2000);
+          alert("Thank you for your interest in Unmaze!");
         })
         .catch((error) => alert(error));
     }
