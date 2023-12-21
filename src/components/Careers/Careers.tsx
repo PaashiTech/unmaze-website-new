@@ -23,7 +23,7 @@ const Careers = () => {
               <StarIcon /> Careers
             </Heading>
           </div>
-          <div className="flex gap-0 lg:gap-8">
+          <div className="flex gap-4 lg:gap-8">
             <Text size="lg">
               Be a part of the change in the way we think about personal
               finance!
