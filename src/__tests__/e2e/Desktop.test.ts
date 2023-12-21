@@ -11,7 +11,7 @@ test.describe("Desktop", () => {
       const navbar = await page.getByTestId("navbar");
       // const jtwButton = await page.getByRole("button", { name: 'Join the waitlist'});
 
-      await expect(navbar).toContainText("Join the waitlist");
+      await expect(navbar).toHaveText(/Join the waitlist/);
     });
 
     test("should not have nav links in the navbar", async ({ page }) => {
