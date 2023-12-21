@@ -10,6 +10,7 @@ const Careers = () => {
   return (
     <div
       id="careers"
+      data-testid="careers"
       className="flex h-fit justify-center bg-primary-green px-5 py-8 lg:p-0"
     >
       <div className="flex flex-grow items-center rounded-[1.25rem] bg-white px-9 py-12 text-primary-green lg:max-w-[50%] lg:rounded-none lg:bg-transparent lg:bg-gradient-unmaze-1 lg:px-[5.625rem] lg:py-16">

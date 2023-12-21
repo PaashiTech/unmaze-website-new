@@ -4,6 +4,7 @@ const Team = () => {
   return (
     <div
       id="team"
+      data-testid="team"
       className="flex flex-col items-center gap-6 bg-primary-green py-[4.75rem] lg:gap-16 lg:py-[8rem]"
     >
       <div className="flex w-full flex-col items-center gap-[0.625rem] px-5 font-font-heading lg:items-start lg:px-[5.625rem]">
