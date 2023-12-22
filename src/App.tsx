@@ -45,7 +45,7 @@ function App() {
       </div>
       <ToastContainer
         position={window.innerWidth <= 1024 ? "top-center" : "bottom-right"}
-        autoClose={2200}
+        autoClose={4000}
         hideProgressBar={false}
         newestOnTop={false}
         pauseOnFocusLoss={false}

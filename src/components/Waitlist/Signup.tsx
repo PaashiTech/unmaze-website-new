@@ -24,7 +24,7 @@ const Signup = () => {
         .then(() => {
           setTimeout(() => {
             window.open("https://forms.office.com/r/XfgPg39D3i");
-          }, 3000);
+          }, 5000);
         })
         .catch((error) => alert(error));
     }
