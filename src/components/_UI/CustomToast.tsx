@@ -1,11 +1,9 @@
 import toastClose from "../../assets/toast-close.svg";
 import toastCheck from "../../assets//toast-check.svg";
-import { ToastContentProps } from "react-toastify";
 import React from "react";
 
 interface CustomToastProps {
   closeToast?: () => void;
-  toastProps?: ToastContentProps;
 }
 
 const CustomToast: React.FC<CustomToastProps> = ({ closeToast }) => {
