@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Team from "./components/Team/Team";
 import Waitlist from "./components/Waitlist/Waitlist";
 import Whitepaper from "./components/Whitepaper/Whitepaper";
+import SurveyBanner from "./components/_UI/SurveyBanner";
 // import WaitlistSticky from "./components/Waitlist/WaitlistSticky";
 // import useElementVisible from "./hooks/useElementVisible";
 
@@ -28,6 +29,7 @@ function App() {
         {/* <div ref={contaierRefOne} data-testid="waitlist-top"> */}
         <Waitlist type="first" />
         {/* </div> */}
+        <SurveyBanner />
         <Features />
         <Whitepaper />
         <Team />

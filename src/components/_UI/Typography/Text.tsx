@@ -43,6 +43,12 @@ const textVariants = cva("font-font-body", {
        * Body-1
        */
       xl: "font-medium text-[1.25rem] lg:text-[1.625rem] leading-[1.75rem] lg:leading-[2.25rem] tracking-[0.05rem] lg:tracking-[0.105rem]",
+
+      /*
+       * Highlight
+       */
+      highlight:
+        "font-semibold text-[0.875rem] leading-[1.125rem] tracking-[0.0175rem]",
     },
   },
   defaultVariants: {
