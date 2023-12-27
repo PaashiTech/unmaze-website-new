@@ -54,11 +54,11 @@ const Signup = () => {
             required
             placeholder="Email address"
             onChange={handleOnChange}
-            className="w-full rounded-l-full bg-white px-[1.5rem] py-[0.75rem]  placeholder:text-placeholder lg:px-[1.75rem] lg:py-[0.88rem] lg:text-xl"
+            className="w-full rounded-l-full bg-white px-[1.5rem] py-[0.75rem]  placeholder:text-placeholder lg:px-[1.75rem] lg:text-xl"
           />
           <button
             type="submit"
-            className="flex shrink-0 items-center rounded-r-full bg-gradient-unmaze-hero px-[1.5rem] py-[0.88rem] font-semibold text-primary-green lg:px-[2.25rem] lg:py-[1.01rem]"
+            className="flex shrink-0 items-center rounded-r-full bg-gradient-unmaze-hero px-[1.5rem] py-[0.88rem] font-semibold text-primary-green lg:px-[1.75rem] "
           >
             <Text size="md" className="font-semibold">
               Sign up
