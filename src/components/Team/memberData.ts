@@ -4,7 +4,6 @@ import Amogh from "../../assets/team/amogh.jpeg";
 import Harsh from "../../assets/team/harsh.jpg";
 import Ketan from "../../assets/team/ketan.jpeg";
 import Vartika from "../../assets/team/vartika.jpeg";
-import Siddhant from "../../assets/team/siddhant.jpg";
 import Urvik from "../../assets/team/urvik.jpg";
 
 export type Member = {
@@ -15,7 +14,7 @@ export type Member = {
   reverse: boolean;
 };
 
-export const memberData: [Member, Member][] = [
+export const memberData: [Member, Member?][] = [
   [
     {
       id: 1,
@@ -79,15 +78,6 @@ export const memberData: [Member, Member][] = [
     },
   ],
   [
-    {
-      id: 7,
-      image: Siddhant,
-      name: "Siddhant Trivedi",
-      bio: `Research Intern,
-            Data Analyst,
-            Sports Enthusiast`,
-      reverse: false,
-    },
     {
       id: 8,
       image: Urvik,
