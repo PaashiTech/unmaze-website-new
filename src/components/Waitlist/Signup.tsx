@@ -37,7 +37,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="flex flex-col items-center gap-4">
+    <div className="flex flex-col items-center gap-4 self-stretch">
       <form
         name="contact"
         method="post"
@@ -45,7 +45,7 @@ const Signup = () => {
         onSubmit={handleSubmit}
         className="w-full"
       >
-        <div className="mx-auto flex w-full max-w-[30rem] items-center justify-center rounded-full  border-[1px] border-solid border-primary-yellow font-font-body">
+        <div className="mx-auto flex w-full max-w-[38rem]  items-center justify-center rounded-full  border-[1px] border-solid border-primary-yellow font-font-body">
           <input type="hidden" name="form-name" value="contact" />
           <input
             type="email"
