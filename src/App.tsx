@@ -16,7 +16,7 @@ function App() {
   const { contaierRef, isVisible } = useElementVisible();
 
   return (
-    <div>
+    <>
       <div>
         <Navbar />
         <Hero />
@@ -45,7 +45,7 @@ function App() {
         draggable={false}
         rtl={false}
       />
-    </div>
+    </>
   );
 }
 

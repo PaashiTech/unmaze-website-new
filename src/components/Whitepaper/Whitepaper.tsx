@@ -9,7 +9,7 @@ const Whitepaper = () => {
   return (
     <div
       id="resources"
-      className="flex justify-center bg-white px-5 py-8 lg:justify-start lg:bg-[#e1f0f0] lg:p-0"
+      className="flex scroll-m-[108px] justify-center bg-white px-5 py-8 lg:justify-start lg:bg-[#e1f0f0] lg:p-0"
     >
       <div className="gradient rounded-[1.25rem] px-9 py-12 text-primary-green lg:bg-gradient-to-r  lg:from-[#e1f0f0] lg:to-[#e1f0f0] lg:px-[5.625rem] lg:py-16 ">
         <div className="flex flex-col gap-4 ">
