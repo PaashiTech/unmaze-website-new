@@ -15,9 +15,15 @@ const Whitepaper = () => {
         <div className="flex flex-col gap-4 ">
           <div className="flex flex-col gap-[0.375rem] font-font-heading lg:gap-3">
             <Heading variant="sub-heading-2">Our Research</Heading>
-            <Heading variant="heading-2">
-              <StarIcon /> The art of mindful investing
-            </Heading>
+            <a
+              href="/Unmaze__Article__Portfolio_Optimization.pdf"
+              target="_blank"
+              className="flex shrink-0"
+            >
+              <Heading variant="heading-2">
+                <StarIcon /> The art of mindful investing
+              </Heading>
+            </a>
           </div>
           <div className="flex gap-6 lg:gap-6">
             <Text size="lg" className="lg:hidden">

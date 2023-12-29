@@ -16,12 +16,18 @@ const Careers = () => {
         <div className="flex flex-col gap-4  lg:gap-6">
           <div className="flex flex-col gap-[0.375rem] font-font-heading lg:gap-3">
             <Heading variant="sub-heading-2">Work with us</Heading>
-            <Heading
-              variant="heading-2"
-              className="text-2xl font-semibold leading-6 tracking-[0.06rem] lg:text-5xl"
+            <a
+              href="https://wellfound.com/company/unmaze-app/jobs"
+              target="_blank"
+              className="flex shrink-0 items-center"
             >
-              <StarIcon /> Careers
-            </Heading>
+              <Heading
+                variant="heading-2"
+                className="text-2xl font-semibold leading-6 tracking-[0.06rem] lg:text-5xl"
+              >
+                <StarIcon /> Careers
+              </Heading>
+            </a>
           </div>
           <div className="flex gap-4 lg:gap-8">
             <Text size="lg">
