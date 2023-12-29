@@ -16,14 +16,14 @@ export const featuresData = [
   },
   {
     id: 2,
-    iconMobile: icon_2_mobile,
-    iconDesktop: icon_2_desktop,
+    iconMobile: icon_3_mobile,
+    iconDesktop: icon_3_desktop,
     text: "Trusted expertise of SEBI-certified advisors",
   },
   {
     id: 3,
-    iconMobile: icon_3_mobile,
-    iconDesktop: icon_3_desktop,
+    iconMobile: icon_2_mobile,
+    iconDesktop: icon_2_desktop,
     text: "Simplified learning step-by-step",
   },
   {
