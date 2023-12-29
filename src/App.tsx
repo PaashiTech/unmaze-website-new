@@ -10,40 +10,28 @@ import Team from "./components/Team/Team";
 import Waitlist from "./components/Waitlist/Waitlist";
 import Whitepaper from "./components/Whitepaper/Whitepaper";
 import SurveyBanner from "./components/_UI/SurveyBanner";
-// import WaitlistSticky from "./components/Waitlist/WaitlistSticky";
-// import useElementVisible from "./hooks/useElementVisible";
+import useElementVisible from "./hooks/useElementVisible";
 
 function App() {
-  // const { contaierRefOne, contaierRefTwo, isVisibleOne, isVisibleTwo } =
-  //   useElementVisible();
-
-  // const isWaitListVisible = !isVisibleOne && !isVisibleTwo;
+  const { contaierRef, isVisible } = useElementVisible();
 
   return (
-    <div className="relative flex h-[100dvh] flex-col">
-      <Navbar />
-      <div
-        className={`flex h-[calc(100dvh-4.5rem)] flex-col overflow-x-hidden overflow-y-scroll scroll-smooth`}
-      >
+    <div>
+      <div>
+        <Navbar />
         <Hero />
-        {/* <div ref={contaierRefOne} data-testid="waitlist-top"> */}
-        <Waitlist type="first" />
-        {/* </div> */}
-        <SurveyBanner />
+        <div ref={contaierRef}>
+          <Waitlist type="first" />
+        </div>
+        <SurveyBanner isAboveVisible={isVisible} />
         <Features />
         <Whitepaper />
         <Team />
         <Careers />
-        <div
-          // ref={contaierRefTwo}
-          className="lg:hidden"
-        >
+        <div className="lg:hidden">
           <Waitlist type="second" />
         </div>
         <Footer />
-        {/* {isWaitListVisible && (
-          <WaitlistSticky type="second" isWaitListVisible />
-        )} */}
       </div>
       <ToastContainer
         position={window.innerWidth <= 1024 ? "top-center" : "bottom-right"}
@@ -52,6 +40,9 @@ function App() {
         newestOnTop={false}
         pauseOnFocusLoss={false}
         closeButton={false}
+        closeOnClick={false}
+        pauseOnHover={false}
+        draggable={false}
         rtl={false}
       />
     </div>

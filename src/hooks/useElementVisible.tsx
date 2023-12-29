@@ -1,18 +1,17 @@
 import { useRef, useState, useEffect } from "react";
 
 const useElementVisible = () => {
-  const contaierRefOne = useRef<HTMLDivElement>(null);
-  const contaierRefTwo = useRef<HTMLDivElement>(null);
-  const [isVisibleOne, setIsVisibleOne] = useState(false);
-  const [isVisibleTwo, setIsVisibleTwo] = useState(false);
+  const contaierRef = useRef<HTMLDivElement>(null);
+
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const containerOne = contaierRefOne.current;
-    const containerTwo = contaierRefTwo.current;
-    const observerOne = new IntersectionObserver(
+    const container = contaierRef.current;
+
+    const observer = new IntersectionObserver(
       (entries) => {
         const [entry] = entries;
-        setIsVisibleOne(entry.isIntersecting);
+        setIsVisible(entry.isIntersecting);
       },
       {
         root: null,
@@ -20,27 +19,15 @@ const useElementVisible = () => {
         threshold: 0.35,
       },
     );
-    const observerTwo = new IntersectionObserver(
-      (entries) => {
-        const [entry] = entries;
-        setIsVisibleTwo(entry.isIntersecting);
-      },
-      {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.725,
-      },
-    );
-    if (containerOne) observerOne.observe(containerOne);
-    if (containerTwo) observerTwo.observe(containerTwo);
+
+    if (container) observer.observe(container);
 
     return () => {
-      if (containerOne) observerOne.unobserve(containerOne);
-      if (containerTwo) observerTwo.unobserve(containerTwo);
+      if (container) observer.unobserve(container);
     };
-  }, [contaierRefOne, contaierRefTwo]);
+  }, [contaierRef]);
 
-  return { contaierRefOne, contaierRefTwo, isVisibleOne, isVisibleTwo };
+  return { contaierRef, isVisible };
 };
 
 export default useElementVisible;
