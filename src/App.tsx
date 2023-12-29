@@ -10,20 +10,15 @@ import Team from "./components/Team/Team";
 import Waitlist from "./components/Waitlist/Waitlist";
 import Whitepaper from "./components/Whitepaper/Whitepaper";
 import SurveyBanner from "./components/_UI/SurveyBanner";
-import useElementVisible from "./hooks/useElementVisible";
 
 function App() {
-  const { contaierRef, isVisible } = useElementVisible();
-
   return (
     <>
       <div>
         <Navbar />
         <Hero />
-        <div ref={contaierRef}>
-          <Waitlist type="first" />
-        </div>
-        <SurveyBanner isAboveVisible={isVisible} />
+        <Waitlist type="first" />
+        <SurveyBanner />
         <Features />
         <Whitepaper />
         <Team />
