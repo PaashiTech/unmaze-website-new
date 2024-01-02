@@ -6,20 +6,22 @@ const useElementStuck = () => {
 
   useEffect(() => {
     const container = containerRef.current;
+    const scrollWatcher = document.createElement("div");
     const observer = new IntersectionObserver(
       ([e]) => {
-        setIsStuck(e.intersectionRatio === 0);
+        console.log(e);
+        setIsStuck(!e.isIntersecting && e.boundingClientRect.top < 72);
       },
-      {
-        rootMargin: "-72px",
-        threshold: [0, 1],
-      },
+      { rootMargin: "-71px", threshold: 1 },
     );
 
-    if (container) observer.observe(container);
+    if (container) {
+      container.before(scrollWatcher);
+      observer.observe(scrollWatcher);
+    }
 
     return () => {
-      if (container) observer.unobserve(container);
+      if (container) observer.unobserve(scrollWatcher);
     };
   }, [containerRef]);
 
