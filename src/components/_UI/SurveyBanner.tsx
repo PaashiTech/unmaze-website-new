@@ -21,10 +21,10 @@ const SurveyBanner = () => {
         className="flex gap-1"
       >
         <Text size="sm" className="font-medium lg:hidden">
-          Join our personal finance survey <u>here</u>
+          Take our personal finance survey <u>here</u>
         </Text>
         <Text size="sm" className="hidden font-medium lg:block">
-          Help us solve your pain points, join our{" "}
+          Help us solve your pain points, take our{" "}
           <span className={`${isStuck ? "text-[#ccfd62]" : "text-inherit"}`}>
             personal finance survey
           </span>{" "}
