@@ -5,6 +5,7 @@ import Harsh from "../../assets/team/harsh.jpg";
 import Ketan from "../../assets/team/ketan.jpeg";
 import Vartika from "../../assets/team/vartika.jpeg";
 import Urvik from "../../assets/team/urvik.jpg";
+import Archisha from "../../assets/team/archisha.jpg";
 
 export type Member = {
   id: number;
@@ -79,13 +80,22 @@ export const memberData: [Member, Member?][] = [
   ],
   [
     {
-      id: 8,
+      id: 7,
       image: Urvik,
       name: `Urvik 
               Jada`,
       bio: `Backend Intern,
             Tech Analyst,
             ex-Deutsche Bank`,
+      reverse: false,
+    },
+    {
+      id: 8,
+      image: Archisha,
+      name: `Archisha Pandey`,
+      bio: `Data & Research Intern, 
+      Tier-1 SAS Visual Analyst, 
+      Wildlife enthusiast`,
       reverse: true,
     },
   ],
