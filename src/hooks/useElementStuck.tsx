@@ -9,7 +9,6 @@ const useElementStuck = () => {
     const scrollWatcher = document.createElement("div");
     const observer = new IntersectionObserver(
       ([e]) => {
-        console.log(e);
         setIsStuck(!e.isIntersecting && e.boundingClientRect.top < 72);
       },
       { rootMargin: "-71px", threshold: 1 },
