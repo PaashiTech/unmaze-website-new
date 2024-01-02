@@ -7,8 +7,8 @@ export const useElementPosition = (offset: number) => {
   useEffect(() => {
     const handleScroll = () => {
       if (ref.current) {
-        const { top, height } = ref.current.getBoundingClientRect();
-        setIsOnTop(top <= offset && top > -height + offset);
+        const { top } = ref.current.getBoundingClientRect();
+        setIsOnTop(top <= offset);
       }
     };
     window.addEventListener("scroll", handleScroll);
