@@ -13,6 +13,7 @@ export type Member = {
   name: string;
   bio: string;
   reverse: boolean;
+  linkedInURL: string;
 };
 
 export const memberData: [Member, Member?][] = [
@@ -26,6 +27,7 @@ export const memberData: [Member, Member?][] = [
             Expansion Advisor,
             ex-Nomura`,
       reverse: false,
+      linkedInURL: "https://www.linkedin.com/in/palnikahemnani/",
     },
     {
       id: 2,
@@ -36,6 +38,7 @@ export const memberData: [Member, Member?][] = [
             Strategy & Operations,
             ex-Nomura, ex-OYO`,
       reverse: true,
+      linkedInURL: "https://www.linkedin.com/in/suman~tiwari/",
     },
   ],
   [
@@ -47,6 +50,7 @@ export const memberData: [Member, Member?][] = [
             Jill of all Trades, 
             ex-PlayShifu, ex-KTM`,
       reverse: false,
+      linkedInURL: "https://www.linkedin.com/in/vartikagoel/",
     },
     {
       id: 4,
@@ -56,6 +60,7 @@ export const memberData: [Member, Member?][] = [
             MS(CS) @Vanderbilt, 
             Habitual tinkerer`,
       reverse: true,
+      linkedInURL: "https://www.linkedin.com/in/amoghskulkarni/",
     },
   ],
   [
@@ -67,6 +72,7 @@ export const memberData: [Member, Member?][] = [
             UX Research, 
             Origami Artist`,
       reverse: false,
+      linkedInURL: "https://www.linkedin.com/in/ketan-damle-607247128/",
     },
     {
       id: 6,
@@ -76,6 +82,7 @@ export const memberData: [Member, Member?][] = [
             ex-Schneider Electric, 
             Casual Speedcuber`,
       reverse: true,
+      linkedInURL: "https://www.linkedin.com/in/harshmohite0996/",
     },
   ],
   [
@@ -88,6 +95,7 @@ export const memberData: [Member, Member?][] = [
             Tech Analyst,
             ex-Deutsche Bank`,
       reverse: false,
+      linkedInURL: "https://www.linkedin.com/in/urvik-jada-807023210/",
     },
     {
       id: 8,
@@ -97,6 +105,7 @@ export const memberData: [Member, Member?][] = [
       Tier-1 SAS Visual Analyst, 
       Wildlife enthusiast`,
       reverse: true,
+      linkedInURL: "https://www.linkedin.com/in/archisha-pandey-2b5b71222/",
     },
   ],
 ];

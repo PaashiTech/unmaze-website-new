@@ -60,17 +60,7 @@ const TeamCarousel = () => {
       {screenType !== "MOBILE" ? (
         <Slider {...settings} className="flex">
           {memberData.flat().map((member) => {
-            return (
-              member && (
-                <MemberCard
-                  key={member.id}
-                  bio={member.bio}
-                  image={member.image}
-                  name={member.name}
-                  reverse={member.reverse}
-                />
-              )
-            );
+            return member && <MemberCard key={member.id} {...member} />;
           })}
         </Slider>
       ) : (
@@ -80,15 +70,7 @@ const TeamCarousel = () => {
               <div className="carousel-card flex flex-col gap-8 py-8">
                 {memberPair.map(
                   (member) =>
-                    member && (
-                      <MemberCard
-                        key={member.id}
-                        bio={member.bio}
-                        image={member.image}
-                        name={member.name}
-                        reverse={member.reverse}
-                      />
-                    ),
+                    member && <MemberCard key={member.id} {...member} />,
                 )}
               </div>
             );
