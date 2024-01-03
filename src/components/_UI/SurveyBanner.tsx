@@ -20,10 +20,13 @@ const SurveyBanner = () => {
         target="_blank"
         className="flex gap-1"
       >
-        <Text size="sm" className="font-medium lg:hidden">
+        <Text size="sm" className="whitespace-nowrap font-medium lg:hidden">
           Take our personal finance survey <u>here</u>
         </Text>
-        <Text size="sm" className="hidden font-medium lg:block">
+        <Text
+          size="sm"
+          className="hidden whitespace-nowrap font-medium lg:block"
+        >
           Help us solve your pain points, take our{" "}
           <span className={`${isStuck ? "text-[#ccfd62]" : "text-inherit"}`}>
             personal finance survey
