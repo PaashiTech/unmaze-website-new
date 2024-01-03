@@ -11,7 +11,7 @@ const useElementStuck = () => {
       ([e]) => {
         setIsStuck(!e.isIntersecting && e.boundingClientRect.top < 72);
       },
-      { rootMargin: "-71px", threshold: 1 },
+      { rootMargin: "-71px 0px 0px 0px", threshold: 1 },
     );
 
     if (container) {
