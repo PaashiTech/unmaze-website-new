@@ -16,9 +16,6 @@ const CustomToast: React.FC<CustomToastProps> = ({ closeToast }) => {
         <p className="shrink-0 text-[0.875rem] leading-[1.125rem] text-white lg:text-[1rem]">
           Thank you, you're on our wailist!
         </p>
-        <p className="shrink-0 text-[0.75rem] leading-[1.125rem] text-[#c8c5c5] lg:text-[0.875rem]">
-          Redirecting you to our user survery...
-        </p>
       </div>
       <button onClick={closeToast} className="shrink-0 lg:hidden">
         <img src={toastClose} />
