@@ -20,13 +20,7 @@ const Signup = () => {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact", email: email }),
-      })
-        .then(() => {
-          setTimeout(() => {
-            window.open("https://forms.office.com/r/XfgPg39D3i");
-          }, 5000);
-        })
-        .catch((error) => alert(error));
+      }).catch((error) => alert(error));
     }
 
     e.preventDefault();
