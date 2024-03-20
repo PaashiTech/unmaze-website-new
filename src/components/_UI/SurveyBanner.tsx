@@ -16,7 +16,7 @@ const SurveyBanner = () => {
       } z-50 py-[0.375rem]  transition-colors lg:gap-2 lg:px-[5.625rem] lg:py-[0.5rem]`}
     >
       <a
-        href="https://forms.office.com/r/XfgPg39D3i"
+        href="https://forms.office.com/r/n84Gedffn9"
         target="_blank"
         className="flex gap-1"
       >

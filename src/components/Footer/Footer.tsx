@@ -58,7 +58,9 @@ const Footer = () => {
         </div>
       </div>
       <hr className="my-6 w-full lg:my-8" />
-      <Text size="xs">Copyright © 2023 Unmaze.app | All rights reserved</Text>
+      <Text size="xs">
+        Copyright © 2023 Unmaze App Tech Pvt Ltd | All rights reserved
+      </Text>
     </div>
   );
 };
